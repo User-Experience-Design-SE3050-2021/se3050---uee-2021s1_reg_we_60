@@ -1,7 +1,7 @@
-# se3050---uee-2021s1_reg_we_60
-se3050---uee-2021s1_reg_we_60 created by GitHub Classroom
+# se3050---uee-2021s2_reg_we_60
+se3050---uee-2021s2_reg_we_60 created by GitHub Classroom
 
-Group ID : 2021S1_REG_WE_60
+Group ID : 2021S2_REG_WE_60
 Members:
  IT19109268 : Avindika H.M.U
  IT19124940 : Sankalana G.L.A
