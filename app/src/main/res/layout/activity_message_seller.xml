@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+android:gravity="center_horizontal"
+android:background="@drawable/gradient_background"
+tools:context=".MessageSeller">
+
+<TextView
+    android:id="@+id/txt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:fontFamily="sans-serif-black"
+    android:gravity="center"
+    android:text="Your Message"
+    android:textColor="#FFFFFFFF"
+    android:textSize="34dp"
+    android:textStyle="bold" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/subject"
+    android:hint="Subject"
+    android:padding="15dp"
+    android:layout_marginTop="20dp"
+    android:maxLength="10"
+    android:background="@android:drawable/editbox_background"/>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/message"
+    android:hint="Enter Message"
+    android:padding="12dp"
+    android:minLines="6"
+    android:inputType="textMultiLine"
+    android:gravity="top"
+    android:layout_marginTop="20dp"
+    android:background="@android:drawable/editbox_background"/>
+
+<Button
+    android:id="@+id/send"
+    android:layout_width="179dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="35dp"
+    android:background="#000000"
+    android:text="SEND MESSAGE"
+    android:textColor="#FFFFFF"
+    android:textSize="20dp"
+    android:textStyle="bold" />
+
+</LinearLayout>
