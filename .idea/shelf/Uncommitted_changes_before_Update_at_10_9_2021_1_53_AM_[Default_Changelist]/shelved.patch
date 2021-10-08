@@ -1,0 +1,1158 @@
+Index: app/src/main/res/layout/activity_payement1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_payement1.xml b/app/src/main/res/layout/activity_payement1.xml
+new file mode 100644
+--- /dev/null	(date 1633723951155)
++++ b/app/src/main/res/layout/activity_payement1.xml	(date 1633723951155)
+@@ -0,0 +1,499 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".payement1">
++
++    <TextView
++        android:id="@+id/textView46"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="Discount"
++        android:textSize="16sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.181"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.777" />
++
++    <TextView
++        android:id="@+id/textView"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="MAKE A PAYMENT"
++        android:textAppearance="@style/TextAppearance.AppCompat.Large"
++        android:textSize="18sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.538"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.022" />
++
++    <TextView
++        android:id="@+id/textView2"
++        android:layout_width="416dp"
++        android:layout_height="37dp"
++        android:background="@drawable/nav"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.6"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.089" />
++
++    <ImageView
++        android:id="@+id/imageView"
++        android:layout_width="50dp"
++        android:layout_height="31dp"
++        android:foregroundTintMode="add"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.044"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.097"
++        app:srcCompat="@drawable/delivery"
++        app:tint="#706F6F" />
++
++    <ImageView
++        android:id="@+id/imageView2"
++        android:layout_width="30dp"
++        android:layout_height="37dp"
++        android:layout_marginTop="-1dp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.419"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.09"
++        app:srcCompat="@drawable/eyeedited"
++        app:tint="#7A7979" />
++
++    <TextView
++        android:id="@+id/textView4"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="DELIVERY"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.189"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.102" />
++
++    <TextView
++        android:id="@+id/textView5"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="REVIEW"
++        android:textColor="#6C6A6A"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.545"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.101" />
++
++    <TextView
++        android:id="@+id/textView6"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="PAYMENT"
++        android:textColor="#F331EE"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.916"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.102" />
++
++    <EditText
++        android:id="@+id/editTextTextPersonName4"
++        android:layout_width="363dp"
++        android:layout_height="23dp"
++        android:ems="10"
++        android:inputType="textPersonName"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.611"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.612" />
++
++    <EditText
++        android:id="@+id/editTextTextPersonName5"
++        android:layout_width="365dp"
++        android:layout_height="23dp"
++        android:ems="10"
++        android:inputType="textPersonName"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.586"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.446" />
++
++    <TextView
++        android:id="@+id/textView20"
++        android:layout_width="383dp"
++        android:layout_height="291dp"
++        android:background="@drawable/borderbox"
++        android:textSize="14sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.561" />
++
++    <TextView
++        android:id="@+id/textView45"
++        android:layout_width="270dp"
++        android:layout_height="33dp"
++        android:background="@drawable/borderbox"
++        android:textSize="14sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.361"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.832" />
++
++    <TextView
++        android:id="@+id/textView35"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="Change"
++        android:textSize="14sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.92"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.404" />
++
++    <TextView
++        android:id="@+id/textView40"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="Change"
++        android:textSize="14sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.92"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.549" />
++
++    <TextView
++        android:id="@+id/textView44"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="Change"
++        android:textSize="14sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.92"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.679" />
++
++    <TextView
++        android:id="@+id/textView15"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="Contact"
++        android:textSize="16sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.14"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.348" />
++
++    <TextView
++        android:id="@+id/textView38"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="Ship to"
++        android:textSize="16sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.14"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.499" />
++
++    <TextView
++        android:id="@+id/textView41"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="Method"
++        android:textSize="16sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.127"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.644" />
++
++    <TextView
++        android:id="@+id/textView33"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="Email"
++        android:textSize="14sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.162"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.377" />
++
++    <TextView
++        android:id="@+id/textView36"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="Phone Number"
++        android:textSize="14sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.191"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.417" />
++
++    <TextView
++        android:id="@+id/textView34"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="davebulner3@gmail.com"
++        android:textSize="14sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.627"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.377" />
++
++    <TextView
++        android:id="@+id/textView39"
++        android:layout_width="261dp"
++        android:layout_height="36dp"
++        android:text="No 10/3 3rd lane Madptha Piliyandala Sri Lanka"
++        android:textSize="14sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.333"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.553" />
++
++    <TextView
++        android:id="@+id/textView42"
++        android:layout_width="252dp"
++        android:layout_height="17dp"
++        android:text="Standard - card payment Checkout"
++        android:textSize="14sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.322"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.678" />
++
++    <TextView
++        android:id="@+id/textView43"
++        android:layout_width="252dp"
++        android:layout_height="17dp"
++        android:text="RS.200.00"
++        android:textSize="14sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.32"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.701" />
++
++    <TextView
++        android:id="@+id/textView37"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="0766663881"
++        android:textSize="14sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.519"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.417" />
++
++    <ImageView
++        android:id="@+id/imageView5"
++        android:layout_width="12dp"
++        android:layout_height="14dp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.265"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.308"
++        app:srcCompat="@drawable/farwardbtn" />
++
++    <ImageView
++        android:id="@+id/imageView11"
++        android:layout_width="12dp"
++        android:layout_height="14dp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.463"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.308"
++        app:srcCompat="@drawable/farwardbtn" />
++
++    <ImageView
++        android:id="@+id/imageView6"
++        android:layout_width="24dp"
++        android:layout_height="29dp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.888"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.833"
++        app:srcCompat="@drawable/farwardbtn" />
++
++    <TextView
++        android:id="@+id/textView19"
++        android:layout_width="413dp"
++        android:layout_height="39dp"
++        android:background="@drawable/nav"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.242" />
++
++    <Button
++        android:id="@+id/button"
++        android:layout_width="197dp"
++        android:layout_height="48dp"
++        android:background="#0C0C0C"
++        android:text="CONTINUE TO PAYMENT"
++        android:textColor="#F8F6F6"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.467"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.944" />
++
++    <ImageView
++        android:id="@+id/imageView7"
++        android:layout_width="40dp"
++        android:layout_height="23dp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.752"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.096"
++        app:srcCompat="@drawable/payedited" />
++
++    <ImageView
++        android:id="@+id/imageView9"
++        android:layout_width="160dp"
++        android:layout_height="56dp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.157"
++        app:srcCompat="@drawable/gflocklogo" />
++
++    <ImageView
++        android:id="@+id/imageView10"
++        android:layout_width="53dp"
++        android:layout_height="24dp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.12"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.251"
++        app:srcCompat="@drawable/carticon"
++        app:tint="#737272" />
++
++    <TextView
++        android:id="@+id/textView28"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="Show Order Summary"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.349"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.25" />
++
++    <TextView
++        android:id="@+id/textView29"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="299dp"
++        android:layout_marginTop="178dp"
++        android:layout_marginEnd="29dp"
++        android:layout_marginBottom="534dp"
++        android:text="LKR 2,050.00"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++
++    <TextView
++        android:id="@+id/textView30"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="27dp"
++        android:layout_marginTop="216dp"
++        android:layout_marginEnd="311dp"
++        android:layout_marginBottom="496dp"
++        android:text="Information"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++
++    <TextView
++        android:id="@+id/textView31"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="126dp"
++        android:layout_marginTop="216dp"
++        android:layout_marginEnd="231dp"
++        android:layout_marginBottom="496dp"
++        android:text="Shipping"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++
++    <TextView
++        android:id="@+id/textView32"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="205dp"
++        android:layout_marginTop="216dp"
++        android:layout_marginEnd="151dp"
++        android:layout_marginBottom="496dp"
++        android:text="Payment"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_cloth_details.xml\" value=\"0.2\" />\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_home_page.xml\" value=\"0.13020833333333334\" />\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_login.xml\" value=\"0.24259259259259258\" />\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_signup.xml\" value=\"0.16\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"Android Studio default JDK\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision b5427ccfa5bc60ffa2033d4a82db41708bd41737)
++++ b/.idea/misc.xml	(date 1633723979797)
+@@ -3,13 +3,15 @@
+   <component name="DesignSurface">
+     <option name="filePathToZoomLevelMap">
+       <map>
+-        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_cloth_details.xml" value="0.2" />
+-        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_home_page.xml" value="0.13020833333333334" />
+-        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_login.xml" value="0.24259259259259258" />
+-        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_signup.xml" value="0.16" />
++        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/borderbox.xml" value="0.2441025641025641" />
++        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/nav.xml" value="0.1" />
++        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_login.xml" value="0.11614583333333334" />
++        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_payement1.xml" value="0.25416666666666665" />
++        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_review.xml" value="0.22314814814814815" />
+       </map>
+     </option>
+   </component>
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
+   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    package=\"com.example.gflock\">\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/Theme.AppCompat.DayNight.NoActionBar\">\r\n        <activity\r\n            android:name=\".Login\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".HomePage\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".Whislist\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".MessageSeller\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".ClothDetails\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".Signup\"\r\n            android:exported=\"true\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	(revision b5427ccfa5bc60ffa2033d4a82db41708bd41737)
++++ b/app/src/main/AndroidManifest.xml	(date 1633723951138)
+@@ -10,6 +10,12 @@
+         android:supportsRtl="true"
+         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+         <activity
++            android:name=".review"
++            android:exported="true" />
++<!--        <activity-->
++<!--            android:name=".payement1"-->
++<!--            android:exported="true" />-->
++        <activity
+             android:name=".Login"
+             android:exported="true" />
+         <activity
+@@ -25,7 +31,7 @@
+             android:name=".ClothDetails"
+             android:exported="true" />
+         <activity
+-            android:name=".Signup"
++            android:name=".payement1"
+             android:exported="true">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+Index: app/src/main/res/drawable/nav.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/nav.xml b/app/src/main/res/drawable/nav.xml
+new file mode 100644
+--- /dev/null	(date 1633722565061)
++++ b/app/src/main/res/drawable/nav.xml	(date 1633722565061)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="utf-8"?>
++<selector xmlns:android="http://schemas.android.com/apk/res/android">
++    <item>
++        <shape android:shape="rectangle">
++            <solid android:color="#C5C5C5"/>
++        </shape>
++    </item>
++</selector>
+Index: app/src/main/java/com/example/gflock/review.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/gflock/review.java b/app/src/main/java/com/example/gflock/review.java
+new file mode 100644
+--- /dev/null	(date 1633722347906)
++++ b/app/src/main/java/com/example/gflock/review.java	(date 1633722347906)
+@@ -0,0 +1,14 @@
++package com.example.gflock;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.os.Bundle;
++
++public class review extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_review);
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/drawable/borderbox.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/borderbox.xml b/app/src/main/res/drawable/borderbox.xml
+new file mode 100644
+--- /dev/null	(date 1633722493424)
++++ b/app/src/main/res/drawable/borderbox.xml	(date 1633722493424)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="utf-8"?>
++<selector xmlns:android="http://schemas.android.com/apk/res/android">
++    <item>
++        <shape android:shape="rectangle">
++            <solid android:color="@android:color/transparent"/>
++            <stroke android:width="1dp" android:color="#000000"/>
++            <corners android:radius="10dp"/>
++        </shape>
++    </item>
++</selector>
+\ No newline at end of file
+Index: app/src/main/java/com/example/gflock/payement1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/gflock/payement1.java b/app/src/main/java/com/example/gflock/payement1.java
+new file mode 100644
+--- /dev/null	(date 1633722285780)
++++ b/app/src/main/java/com/example/gflock/payement1.java	(date 1633722285780)
+@@ -0,0 +1,14 @@
++package com.example.gflock;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.os.Bundle;
++
++public class payement1 extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_payement1);
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_review.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_review.xml b/app/src/main/res/layout/activity_review.xml
+new file mode 100644
+--- /dev/null	(date 1633723951149)
++++ b/app/src/main/res/layout/activity_review.xml	(date 1633723951149)
+@@ -0,0 +1,486 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".review">
++
++    <TextView
++        android:id="@+id/textView11"
++        android:layout_width="138dp"
++        android:layout_height="40dp"
++        android:layout_marginStart="160dp"
++        android:layout_marginTop="116dp"
++        android:layout_marginEnd="123dp"
++        android:layout_marginBottom="564dp"
++        android:text="HIGH NECK CROP TOP -349"
++        android:textSize="16sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++
++    <TextView
++        android:id="@+id/textView"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="REVIEW YOUR ORDER"
++        android:textAppearance="@style/TextAppearance.AppCompat.Large"
++        android:textSize="18sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.538"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.022" />
++
++    <TextView
++        android:id="@+id/textView2"
++        android:layout_width="416dp"
++        android:layout_height="37dp"
++        android:background="@drawable/nav"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.6"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.089" />
++
++    <ImageView
++        android:id="@+id/imageView"
++        android:layout_width="50dp"
++        android:layout_height="31dp"
++        android:foregroundTintMode="add"
++        android:tint="#706F6F"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.044"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.097"
++        app:srcCompat="@drawable/delivery" />
++
++    <ImageView
++        android:id="@+id/imageView2"
++        android:layout_width="30dp"
++        android:layout_height="37dp"
++        android:layout_marginTop="-1dp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.419"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.09"
++        app:srcCompat="@drawable/eyeedited" />
++
++    <ImageView
++        android:id="@+id/imageView3"
++        android:layout_width="29dp"
++        android:layout_height="23dp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.74"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.098"
++        app:srcCompat="@drawable/clipart2818590" />
++
++    <TextView
++        android:id="@+id/textView4"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="DELIVERY"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.189"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.102" />
++
++    <TextView
++        android:id="@+id/textView5"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="REVIEW"
++        android:textColor="#F331EE"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.545"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.101" />
++
++    <TextView
++        android:id="@+id/textView6"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="PAYMENT"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.916"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.102" />
++
++    <ImageView
++        android:id="@+id/imageView4"
++        android:layout_width="95dp"
++        android:layout_height="134dp"
++        android:layout_marginStart="19dp"
++        android:layout_marginTop="108dp"
++        android:layout_marginEnd="287dp"
++        android:layout_marginBottom="469dp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.6"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.4"
++        app:srcCompat="@drawable/cloth" />
++
++    <TextView
++        android:id="@+id/textView8"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="302dp"
++        android:layout_marginTop="135dp"
++        android:layout_marginEnd="15dp"
++        android:layout_marginBottom="574dp"
++        android:text="LKR 1,850.00"
++        android:textSize="16sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.0"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.0" />
++
++    <TextView
++        android:id="@+id/textView9"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="155dp"
++        android:layout_marginTop="162dp"
++        android:layout_marginEnd="199dp"
++        android:layout_marginBottom="550dp"
++        android:text="8/ yellow"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++
++    <TextView
++        android:id="@+id/textView10"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="155dp"
++        android:layout_marginTop="181dp"
++        android:layout_marginEnd="224dp"
++        android:layout_marginBottom="531dp"
++        android:text="Qty 8"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++
++    <EditText
++        android:id="@+id/editTextTextPersonName3"
++        android:layout_width="399dp"
++        android:layout_height="27dp"
++        android:ems="10"
++        android:inputType="textPersonName"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.345" />
++
++    <EditText
++        android:id="@+id/editTextTextPersonName4"
++        android:layout_width="399dp"
++        android:layout_height="27dp"
++        android:ems="10"
++        android:inputType="textPersonName"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.512" />
++
++    <EditText
++        android:id="@+id/editTextTextPersonName5"
++        android:layout_width="399dp"
++        android:layout_height="27dp"
++        android:ems="10"
++        android:inputType="textPersonName"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.599" />
++
++    <TextView
++        android:id="@+id/textView12"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="ADDRESS"
++        android:textSize="16sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.076"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.38" />
++
++    <TextView
++        android:id="@+id/textView14"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="NOTE"
++        android:textSize="16sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.076"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.547" />
++
++    <TextView
++        android:id="@+id/textView15"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="DELIVERY"
++        android:textSize="16sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.078"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.645" />
++
++    <TextView
++        android:id="@+id/textView18"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="LKR 200.00"
++        android:textSize="16sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.72"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.688" />
++
++    <TextView
++        android:id="@+id/textView16"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="Standard -card"
++        android:textSize="14sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.081"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.686" />
++
++    <TextView
++        android:id="@+id/textView17"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="Payment checkout"
++        android:textSize="14sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.081"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.712" />
++
++    <TextView
++        android:id="@+id/textView13"
++        android:layout_width="98dp"
++        android:layout_height="67dp"
++        android:text="No 10/3 ,, 3rd lane, Madaptha, Piliyandala"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.092"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.454" />
++
++    <ImageView
++        android:id="@+id/imageView5"
++        android:layout_width="25dp"
++        android:layout_height="22dp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.919"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.438"
++        app:srcCompat="@drawable/farwardbtn" />
++
++    <ImageView
++        android:id="@+id/imageView8"
++        android:layout_width="25dp"
++        android:layout_height="22dp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.919"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.564"
++        app:srcCompat="@drawable/farwardbtn" />
++
++    <ImageView
++        android:id="@+id/imageView6"
++        android:layout_width="25dp"
++        android:layout_height="22dp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.924"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.688"
++        app:srcCompat="@drawable/farwardbtn" />
++
++    <TextView
++        android:id="@+id/textView19"
++        android:layout_width="411dp"
++        android:layout_height="52dp"
++        android:background="@drawable/nav"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.0"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.795" />
++
++    <TextView
++        android:id="@+id/textView22"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="Subtotal+Tax"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="@+id/textView19"
++        app:layout_constraintHorizontal_bias="0.221"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.769" />
++
++    <TextView
++        android:id="@+id/textView26"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="TOTAL"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="@+id/textView19"
++        app:layout_constraintHorizontal_bias="0.2"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.842" />
++
++    <TextView
++        android:id="@+id/textView27"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="TOTAL"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="@+id/textView19"
++        app:layout_constraintHorizontal_bias="0.2"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.842" />
++
++    <TextView
++        android:id="@+id/textView24"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="LKR 1850.00"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="@+id/textView19"
++        app:layout_constraintHorizontal_bias="0.644"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.768" />
++
++    <TextView
++        android:id="@+id/textView3"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="LKR 200.00"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="@+id/textView19"
++        app:layout_constraintHorizontal_bias="0.628"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.793" />
++
++    <TextView
++        android:id="@+id/textView7"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="LKR 2050.00"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="@+id/textView19"
++        app:layout_constraintHorizontal_bias="0.643"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.842" />
++
++    <TextView
++        android:id="@+id/textView23"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="Shipping"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="@+id/textView19"
++        app:layout_constraintHorizontal_bias="0.221"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.794" />
++
++    <TextView
++        android:id="@+id/textView21"
++        android:layout_width="270dp"
++        android:layout_height="18dp"
++        android:text="By submitting your order you accept the policy,"
++        android:textSize="12sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="@+id/textView19"
++        app:layout_constraintHorizontal_bias="0.517"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.962" />
++
++    <TextView
++        android:id="@+id/textView25"
++        android:layout_width="370dp"
++        android:layout_height="21dp"
++        android:text="Privacy policy, Refund policy Shipping policy and term of  services"
++        android:textSize="12sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="@+id/textView19"
++        app:layout_constraintHorizontal_bias="0.487"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.991" />
++
++    <Button
++        android:id="@+id/button"
++        android:layout_width="197dp"
++        android:layout_height="48dp"
++        android:background="#0C0C0C"
++        android:text="CONTINUE"
++        android:textColor="#F8F6F6"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.448"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.922" />
++
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
