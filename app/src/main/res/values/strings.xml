@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">GFLOCK</string>
- <string name="app_name2">BEST SELLERS</string>
- <string name="app_name3">CATEGORIES</string>
+    <string name="app_name2">BEST SELLERS</string>
+    <string name="app_name3">CATEGORIES</string>
 
 
 </resources>
