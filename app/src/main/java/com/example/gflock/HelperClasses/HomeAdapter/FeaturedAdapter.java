@@ -13,6 +13,8 @@ import com.example.gflock.R;
 
 import java.util.ArrayList;
 
+
+
 public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.FeaturedViewHolder>  {
 
 
@@ -44,7 +46,8 @@ public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.Featur
 
     @Override
     public int getItemCount() {
-        return 0;
+
+        return featuredLocations.size();
     }
 
     public static class FeaturedViewHolder extends RecyclerView.ViewHolder {
