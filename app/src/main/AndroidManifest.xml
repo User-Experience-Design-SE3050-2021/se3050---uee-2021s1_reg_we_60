@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity
-            android:name=".Cart"
+            android:name=".ClothDetails"
             android:exported="true" />
         <activity
             android:name=".MyAccount"
@@ -36,7 +36,7 @@
             android:name=".Login"
             android:exported="true" />
         <activity
-            android:name=".ClothDetails"
+            android:name=".Cart"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
