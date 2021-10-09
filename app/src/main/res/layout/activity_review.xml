@@ -87,7 +87,7 @@
         app:srcCompat="@drawable/clipart2818590" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/loginEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="DELIVERY"
@@ -99,7 +99,7 @@
         app:layout_constraintVertical_bias="0.102" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/loginPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="REVIEW"
@@ -112,7 +112,7 @@
         app:layout_constraintVertical_bias="0.101" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/loginTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="PAYMENT"
@@ -185,7 +185,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/inputSignupPassword"
         android:layout_width="399dp"
         android:layout_height="27dp"
         android:ems="10"
