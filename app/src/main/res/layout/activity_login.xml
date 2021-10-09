@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="1.0">
 
         <EditText
-            android:id="@+id/inputSignupEmail"
+            android:id="@+id/firstNameInput"
             android:layout_width="323dp"
             android:layout_height="45dp"
             android:background="@drawable/edit_tx"
@@ -93,7 +93,7 @@
             app:layout_constraintVertical_bias="0.478" />
 
         <Button
-            android:id="@+id/signupButton"
+            android:id="@+id/loginButton"
             android:layout_width="323dp"
             android:layout_height="44dp"
             android:background="@drawable/btn"
@@ -111,7 +111,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/loginTitle"
+        android:id="@+id/profile"
         android:layout_width="143dp"
         android:layout_height="35dp"
         android:text="LOGIN"
