@@ -105,7 +105,7 @@
                         android:layout_gravity="left"
                         android:layout_margin="10dp"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/cloth"
+                        android:src="@drawable/tshirt1"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -148,7 +148,7 @@
                         android:layout_width="203dp"
                         android:layout_height="37dp"
                         android:layout_gravity="bottom|center_horizontal"
-                        android:text="LKR 1550.00"
+                        android:text="LKR 1,550.00"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold"
@@ -251,7 +251,7 @@
                         android:layout_width="67dp"
                         android:layout_height="24dp"
                         android:layout_gravity="top"
-                        android:text="S/BLACK"
+                        android:text="S/RED"
                         android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -267,7 +267,7 @@
                         android:layout_gravity="left"
                         android:layout_margin="10dp"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/cloth"
+                        android:src="@drawable/tshirt2"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -294,7 +294,7 @@
                         android:layout_width="204dp"
                         android:layout_height="23dp"
                         android:layout_gravity="bottom|center_horizontal"
-                        android:text="CREW NECK T SHIRT-MEN 18108"
+                        android:text="POLO T SHIRT - MEN MT304"
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:textColor="@color/black"
@@ -310,7 +310,7 @@
                         android:layout_width="203dp"
                         android:layout_height="37dp"
                         android:layout_gravity="bottom|center_horizontal"
-                        android:text="LKR 1550.00"
+                        android:text="LKR 2,550.00"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold"
@@ -430,7 +430,7 @@
                         android:layout_gravity="left"
                         android:layout_margin="10dp"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/cloth"
+                        android:src="@drawable/tshirt3"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -457,7 +457,7 @@
                         android:layout_width="204dp"
                         android:layout_height="23dp"
                         android:layout_gravity="bottom|center_horizontal"
-                        android:text="CREW NECK T SHIRT-MEN 18108"
+                        android:text="V NECK T SHIRT - MEN 1002"
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:textColor="@color/black"
@@ -595,7 +595,7 @@
                         android:layout_gravity="left"
                         android:layout_margin="10dp"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/cloth"
+                        android:src="@drawable/tshirt4"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -622,7 +622,7 @@
                         android:layout_width="204dp"
                         android:layout_height="23dp"
                         android:layout_gravity="bottom|center_horizontal"
-                        android:text="CREW NECK T SHIRT-MEN 18108"
+                        android:text="TIE DYE T SHIRT - MEN MT304"
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:textColor="@color/black"
@@ -638,7 +638,7 @@
                         android:layout_width="203dp"
                         android:layout_height="37dp"
                         android:layout_gravity="bottom|center_horizontal"
-                        android:text="LKR 1550.00"
+                        android:text="LKR 2,150.00"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold"
@@ -757,7 +757,7 @@
                         android:layout_gravity="left"
                         android:layout_margin="10dp"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/cloth"
+                        android:src="@drawable/tshirt5"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -784,7 +784,7 @@
                         android:layout_width="204dp"
                         android:layout_height="23dp"
                         android:layout_gravity="bottom|center_horizontal"
-                        android:text="CREW NECK T SHIRT-MEN 18108"
+                        android:text=" ROLLED UP SLEEVE SHIRT - MEN MS1105"
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:textColor="@color/black"
@@ -919,7 +919,7 @@
                         android:layout_gravity="left"
                         android:layout_margin="10dp"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/cloth"
+                        android:src="@drawable/tshirt6"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -946,7 +946,7 @@
                         android:layout_width="204dp"
                         android:layout_height="23dp"
                         android:layout_gravity="bottom|center_horizontal"
-                        android:text="CREW NECK T SHIRT-MEN 18108"
+                        android:text="PRINTED SHORT SLEEVE SHIRT - MEN MS1105"
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:textColor="@color/black"
@@ -962,7 +962,7 @@
                         android:layout_width="203dp"
                         android:layout_height="37dp"
                         android:layout_gravity="bottom|center_horizontal"
-                        android:text="LKR 1550.00"
+                        android:text="LKR 2,850.00"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold"
@@ -1081,7 +1081,7 @@
                         android:layout_gravity="left"
                         android:layout_margin="10dp"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/cloth"
+                        android:src="@drawable/tshirt7"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -1108,7 +1108,7 @@
                         android:layout_width="204dp"
                         android:layout_height="23dp"
                         android:layout_gravity="bottom|center_horizontal"
-                        android:text="CREW NECK T SHIRT-MEN 18108"
+                        android:text="SLIM FIT DARK WASHED JEAN - MEN MD0224"
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:textColor="@color/black"
@@ -1124,7 +1124,7 @@
                         android:layout_width="203dp"
                         android:layout_height="37dp"
                         android:layout_gravity="bottom|center_horizontal"
-                        android:text="LKR 1550.00"
+                        android:text="LKR 3,950.00.00"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold"
@@ -1242,7 +1242,7 @@
                         android:layout_gravity="left"
                         android:layout_margin="10dp"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/cloth"
+                        android:src="@drawable/tshirt8"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -1269,7 +1269,7 @@
                         android:layout_width="204dp"
                         android:layout_height="23dp"
                         android:layout_gravity="bottom|center_horizontal"
-                        android:text="CREW NECK T SHIRT-MEN 18108"
+                        android:text="SLIM FIT BLACK RIPPED JEAN - MEN MD0224"
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:textColor="@color/black"
@@ -1285,7 +1285,7 @@
                         android:layout_width="203dp"
                         android:layout_height="37dp"
                         android:layout_gravity="bottom|center_horizontal"
-                        android:text="LKR 1550.00"
+                        android:text="LKR 3,950.00"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold"
@@ -1368,489 +1368,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                app:cardBackgroundColor="@color/colorBlue"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="2dp"
-                app:cardMaxElevation="4dp"
-                app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true">
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/textView74"
-                        android:layout_width="67dp"
-                        android:layout_height="24dp"
-                        android:layout_gravity="top"
-                        android:text="S/BLACK"
-                        android:textSize="12sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.447"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.449" />
-
-                    <ImageView
-                        android:id="@+id/imgrty"
-                        android:layout_width="100dp"
-                        android:layout_height="173dp"
-                        android:layout_gravity="left"
-                        android:layout_margin="10dp"
-                        android:contentDescription="@string/app_name"
-                        android:src="@drawable/cloth"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.2" />
-
-                    <TextView
-                        android:layout_width="68dp"
-                        android:layout_height="17dp"
-                        android:layout_gravity="bottom|center_horizontal"
-                        android:text="@string/app_name"
-                        android:textSize="10sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.448"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.207" />
-
-                    <TextView
-                        android:id="@+id/textView90"
-                        android:layout_width="204dp"
-                        android:layout_height="23dp"
-                        android:layout_gravity="bottom|center_horizontal"
-                        android:text="CREW NECK T SHIRT-MEN 18108"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.778"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.311" />
-
-                    <TextView
-                        android:id="@+id/textView95"
-                        android:layout_width="203dp"
-                        android:layout_height="37dp"
-                        android:layout_gravity="bottom|center_horizontal"
-                        android:text="LKR 1550.00"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.774"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.685" />
-
-                    <Button
-                        android:id="@+id/decrease46"
-                        android:layout_width="45dp"
-                        android:layout_height="35dp"
-                        android:onClick="decreaseInteger"
-                        android:text="-"
-                        android:backgroundTint="@color/white"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.761"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.936" />
-
-                    <TextView
-                        android:id="@+id/integer_number75"
-                        android:layout_width="31dp"
-                        android:layout_height="34dp"
-                        android:text="1"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.882"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.949" />
-
-                    <Button
-                        android:id="@+id/increase67"
-                        android:layout_width="45dp"
-                        android:layout_height="36dp"
-                        android:onClick="increaseInteger"
-                        android:text="+"
-                        android:backgroundTint="@color/white"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.985"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.942" />
-
-                    <ImageView
-                        android:id="@+id/imageView48"
-                        android:layout_width="24dp"
-                        android:layout_height="14dp"
-                        android:layout_alignParentEnd="true"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.986"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.055"
-                        app:srcCompat="@drawable/close" />
-
-                    <CheckBox
-                        android:id="@+id/checkBox16"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.002"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                app:cardBackgroundColor="@color/colorBlue"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="2dp"
-                app:cardMaxElevation="4dp"
-                app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/textView15"
-                        android:layout_width="67dp"
-                        android:layout_height="24dp"
-                        android:layout_gravity="top"
-                        android:text="S/BLACK"
-                        android:textSize="12sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.447"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.449" />
-
-                    <ImageView
-                        android:id="@+id/img23"
-                        android:layout_width="100dp"
-                        android:layout_height="173dp"
-                        android:layout_gravity="left"
-                        android:layout_margin="10dp"
-                        android:contentDescription="@string/app_name"
-                        android:src="@drawable/cloth"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.2" />
-
-                    <TextView
-                        android:layout_width="68dp"
-                        android:layout_height="17dp"
-                        android:layout_gravity="bottom|center_horizontal"
-                        android:text="@string/app_name"
-                        android:textSize="10sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.448"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.207" />
-
-                    <TextView
-                        android:id="@+id/textView35"
-                        android:layout_width="204dp"
-                        android:layout_height="23dp"
-                        android:layout_gravity="bottom|center_horizontal"
-                        android:text="CREW NECK T SHIRT-MEN 18108"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.778"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.311" />
-
-                    <TextView
-                        android:id="@+id/textView81"
-                        android:layout_width="203dp"
-                        android:layout_height="37dp"
-                        android:layout_gravity="bottom|center_horizontal"
-                        android:text="LKR 1550.00"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.774"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.685" />
-
-                    <Button
-                        android:id="@+id/decrease26"
-                        android:layout_width="45dp"
-                        android:layout_height="35dp"
-                        android:onClick="decreaseInteger"
-                        android:text="-"
-                        android:backgroundTint="@color/white"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.761"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.936" />
-
-                    <TextView
-                        android:id="@+id/integer_number58"
-                        android:layout_width="31dp"
-                        android:layout_height="34dp"
-                        android:text="1"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.882"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.949" />
-
-                    <Button
-                        android:id="@+id/increase78"
-                        android:layout_width="45dp"
-                        android:layout_height="36dp"
-                        android:onClick="increaseInteger"
-                        android:text="+"
-                        android:backgroundTint="@color/white"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.985"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.942" />
-
-                    <ImageView
-                        android:id="@+id/imageView71"
-                        android:layout_width="24dp"
-                        android:layout_height="14dp"
-                        android:layout_alignParentEnd="true"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.986"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.055"
-                        app:srcCompat="@drawable/close" />
-
-                    <CheckBox
-                        android:id="@+id/checkBox47"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.002"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="1dp"
-                app:cardBackgroundColor="@color/colorBlue"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="2dp"
-                app:cardMaxElevation="4dp"
-                app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/textView52"
-                        android:layout_width="67dp"
-                        android:layout_height="24dp"
-                        android:layout_gravity="top"
-                        android:text="S/BLACK"
-                        android:textSize="12sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.447"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.449" />
-
-                    <ImageView
-                        android:id="@+id/img"
-                        android:layout_width="100dp"
-                        android:layout_height="173dp"
-                        android:layout_gravity="left"
-                        android:layout_margin="10dp"
-                        android:contentDescription="@string/app_name"
-                        android:src="@drawable/cloth"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.2" />
-
-                    <TextView
-                        android:layout_width="68dp"
-                        android:layout_height="17dp"
-                        android:layout_gravity="bottom|center_horizontal"
-                        android:text="@string/app_name"
-                        android:textSize="10sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.448"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.207" />
-
-                    <TextView
-                        android:id="@+id/textView50"
-                        android:layout_width="204dp"
-                        android:layout_height="23dp"
-                        android:layout_gravity="bottom|center_horizontal"
-                        android:text="CREW NECK T SHIRT-MEN 18108"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.778"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.311" />
-
-                    <TextView
-                        android:id="@+id/textView51"
-                        android:layout_width="203dp"
-                        android:layout_height="37dp"
-                        android:layout_gravity="bottom|center_horizontal"
-                        android:text="LKR 1550.00"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.774"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.685" />
-
-                    <Button
-                        android:id="@+id/decrease"
-                        android:layout_width="45dp"
-                        android:layout_height="35dp"
-                        android:onClick="decreaseInteger"
-                        android:text="-"
-                        android:backgroundTint="@color/white"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.761"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.936" />
-
-                    <TextView
-                        android:id="@+id/integer_number"
-                        android:layout_width="31dp"
-                        android:layout_height="34dp"
-                        android:text="1"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.882"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.949" />
-
-                    <Button
-                        android:id="@+id/increase"
-                        android:layout_width="45dp"
-                        android:layout_height="36dp"
-                        android:onClick="increaseInteger"
-                        android:text="+"
-                        android:backgroundTint="@color/white"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.985"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.942" />
-
-                    <ImageView
-                        android:id="@+id/imageView13"
-                        android:layout_width="24dp"
-                        android:layout_height="14dp"
-                        android:layout_alignParentEnd="true"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.986"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.055"
-                        app:srcCompat="@drawable/close" />
-                    <CheckBox
-                        android:id="@+id/checkBox"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.002"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0" />
-
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
     </ScrollView>
@@ -1864,6 +1381,7 @@
         android:layout_height="120dp"
         android:layout_alignParentBottom="true"
         android:orientation="vertical">
+
         <Button
             android:layout_width="350sp"
             android:layout_height="50sp"
@@ -1886,23 +1404,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SUBTOTAL"
-            android:textStyle="bold"
             android:textSize="17sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.605"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.158"/>
+            app:layout_constraintVertical_bias="0.158" />
 
         <TextView
             android:id="@+id/textView60"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="LKR 9,650.00"
-            android:textStyle="bold"
-                android:textSize="17sp"
             android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.959"
