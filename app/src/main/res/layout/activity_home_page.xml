@@ -13,6 +13,7 @@ tools:context=".HomePage">
     android:padding="20dp">
 
     <ImageView
+        android:id="@+id/men"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_centerVertical="true"
@@ -31,6 +32,7 @@ tools:context=".HomePage">
         android:textStyle="bold" />
 
     <ImageView
+        android:id="@+id/mesg"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_alignParentRight="true"
@@ -39,6 +41,7 @@ tools:context=".HomePage">
         android:src="@drawable/message" />
 
     <ImageView
+        android:id="@+id/cart2"
         android:layout_width="70dp"
         android:layout_height="80dp"
         android:layout_alignParentEnd="true"
