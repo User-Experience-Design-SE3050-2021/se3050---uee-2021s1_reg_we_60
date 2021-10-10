@@ -1,0 +1,440 @@
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\r\n    id 'com.android.application'\r\n}\r\n\r\nandroid {\r\n    compileSdk 31\r\n\r\n    defaultConfig {\r\n        applicationId \"com.example.gflock\"\r\n        minSdk 21\r\n        targetSdk 31\r\n        versionCode 1\r\n        versionName \"1.0\"\r\n\r\n        testInstrumentationRunner \"androidx.test.runner.AndroidJUnitRunner\"\r\n    }\r\n\r\n    buildTypes {\r\n        release {\r\n            minifyEnabled false\r\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'\r\n        }\r\n    }\r\n    compileOptions {\r\n        sourceCompatibility JavaVersion.VERSION_1_8\r\n        targetCompatibility JavaVersion.VERSION_1_8\r\n    }\r\n}\r\n\r\ndependencies {\r\n\r\n    implementation 'androidx.appcompat:appcompat:1.3.1'\r\n    implementation 'com.google.android.material:material:1.4.0'\r\n    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'\r\n    testImplementation 'junit:junit:4.+'\r\n    androidTestImplementation 'androidx.test.ext:junit:1.1.3'\r\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build.gradle b/app/build.gradle
+--- a/app/build.gradle	(revision fbf7af05a564db1e01fe5bba3ff8b0285d12f5aa)
++++ b/app/build.gradle	(date 1633664790456)
+@@ -32,7 +32,10 @@
+     implementation 'androidx.appcompat:appcompat:1.3.1'
+     implementation 'com.google.android.material:material:1.4.0'
+     implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+-    testImplementation 'junit:junit:4.+'
++    testImplementation 'junit:junit:4.13.2'
+     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
++    implementation 'androidx.cardview:cardview:1.0.0'
++    implementation 'androidx.recyclerview:recyclerview:1.2.1'
++
+ }
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_home_page.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\nxmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\nxmlns:tools=\"http://schemas.android.com/tools\"\r\nandroid:layout_width=\"match_parent\"\r\nandroid:layout_height=\"match_parent\"\r\nandroid:orientation=\"vertical\"\r\ntools:context=\".HomePage\">\r\n\r\n<RelativeLayout\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"wrap_content\"\r\n    android:padding=\"20dp\">\r\n\r\n    <ImageView\r\n        android:layout_width=\"40dp\"\r\n        android:layout_height=\"40dp\"\r\n        android:src=\"@drawable/menu\"\r\n        android:layout_centerVertical=\"true\"\r\n        />\r\n\r\n    <ImageView\r\n        android:layout_width=\"40dp\"\r\n        android:layout_height=\"40dp\"\r\n        android:src=\"@drawable/cart\"\r\n        android:layout_alignParentRight=\"true\"\r\n        android:layout_centerVertical=\"true\"\r\n        android:padding=\"5dp\"/>\r\n\r\n</RelativeLayout>\r\n\r\n<ScrollView\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\" >\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:orientation=\"vertical\">\r\n\r\n        <RelativeLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"40dp\"\r\n            android:background=\"#FFFFFF\"\r\n            android:layout_marginLeft=\"40dp\"\r\n            android:layout_marginRight=\"40dp\"\r\n            android:elevation=\"8dp\"\r\n            android:layout_marginTop=\"20dp\"\r\n            android:layout_marginBottom=\"20dp\"  >\r\n\r\n            <TextView\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"Search..\"\r\n                android:textColor=\"#000000\"\r\n                android:layout_centerVertical=\"true\"\r\n                android:layout_marginLeft=\"15dp\" />\r\n\r\n            <ImageView\r\n                android:layout_width=\"30dp\"\r\n                android:layout_height=\"30dp\"\r\n                android:src=\"@drawable/search1\"\r\n                android:layout_alignParentRight=\"true\"\r\n                android:layout_centerVertical=\"true\"\r\n                android:layout_marginLeft=\"15dp\"/>\r\n        </RelativeLayout>\r\n\r\n        <RelativeLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\" >\r\n\r\n            <TextView\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:text=\"WELCOME TO GFLock\"\r\n                android:textColor=\"#000000\"\r\n                android:textSize=\"24sp\"\r\n                android:layout_centerHorizontal=\"true\" />\r\n\r\n        </RelativeLayout>\r\n\r\n        <LinearLayout\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_gravity=\"center\"\r\n            android:orientation=\"horizontal\">\r\n\r\n            <LinearLayout\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:orientation=\"vertical\">\r\n\r\n                <ImageView\r\n                    android:layout_width=\"100dp\"\r\n                    android:layout_height=\"100dp\"\r\n                    android:src=\"@drawable/image5\"\r\n                    android:background=\"@drawable/card_1\"\r\n                    android:layout_centerInParent=\"true\"/>\r\n\r\n                <TextView\r\n                    android:layout_width=\"match_parent\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:text=\"Womenwear\"\r\n                    android:textColor=\"#000000\"\r\n                    android:textAlignment=\"center\"\r\n                    android:gravity=\"center_horizontal\"/>\r\n            </LinearLayout>\r\n\r\n            <LinearLayout\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:orientation=\"vertical\">\r\n\r\n                <ImageView\r\n                    android:layout_width=\"100dp\"\r\n                    android:layout_height=\"100dp\"\r\n                    android:src=\"@drawable/men1\"\r\n                    android:background=\"@drawable/card_1\"\r\n                    android:layout_centerInParent=\"true\"/>\r\n\r\n                <TextView\r\n                    android:layout_width=\"match_parent\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:text=\"Menwear\"\r\n                    android:textColor=\"#000000\"\r\n                    android:textAlignment=\"center\"\r\n                    android:gravity=\"center_horizontal\"/>\r\n            </LinearLayout>\r\n\r\n            <LinearLayout\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:orientation=\"vertical\">\r\n\r\n                <ImageView\r\n                    android:layout_width=\"100dp\"\r\n                    android:layout_height=\"100dp\"\r\n                    android:src=\"@drawable/discount\"\r\n                    android:background=\"@drawable/card_1\"\r\n                    android:layout_centerInParent=\"true\"/>\r\n\r\n                <TextView\r\n                    android:layout_width=\"match_parent\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:text=\"Discounts\"\r\n                    android:textColor=\"#000000\"\r\n                    android:textAlignment=\"center\"\r\n                    android:gravity=\"center_horizontal\"/>\r\n            </LinearLayout>\r\n        </LinearLayout>\r\n\r\n\r\n        <RelativeLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"match_parent\"\r\n            android:layout_marginTop=\"20dp\"\r\n            android:layout_marginLeft=\"20dp\">\r\n\r\n            <LinearLayout\r\n                android:id=\"@+id/featured_background\"\r\n                android:layout_width=\"170dp\"\r\n                android:layout_height=\"280dp\"\r\n                android:background=\"#000000\"\r\n                android:layout_margin=\"10dp\"\r\n                android:orientation=\"vertical\">\r\n\r\n                <TextView\r\n                    android:layout_width=\"wrap_content\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:textSize=\"25sp\"\r\n                    android:text=\"Featured Location\"\r\n                    android:textColor=\"@color/colorAccent\"\r\n                    android:layout_margin=\"10dp\"\r\n                    android:textAllCaps=\"true\"\r\n                    android:layout_marginLeft=\"10dp\"/>\r\n\r\n                <TextView\r\n                    android:layout_width=\"wrap_content\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:layout_marginLeft=\"10dp\"\r\n                    android:textColor=\"@color/colorAccent\"\r\n                    android:text=\"Description\"/>\r\n\r\n            </LinearLayout>\r\n\r\n            <androidx.recyclerview.widget.RecyclerView\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"match_parent\" />\r\n\r\n            <androidx.recyclerview.widget.RecyclerView\r\n                android:id=\"@+id/feature_recycled\"\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"280dp\"\r\n                android:layout_toRightOf=\"@id/featured_background\"\r\n                android:background=\"@drawable/background1\" />\r\n\r\n\r\n        </RelativeLayout>\r\n\r\n        <LinearLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:orientation=\"vertical\"\r\n            android:layout_marginTop=\"30dp\"\r\n            android:padding=\"20dp\">\r\n\r\n            <RelativeLayout\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\">\r\n\r\n                <TextView\r\n                    android:layout_width=\"wrap_content\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:text=\"@string/app_name2\"\r\n                    android:layout_alignParentRight=\"true\"\r\n                    android:layout_centerVertical=\"true\"/>\r\n\r\n\r\n            </RelativeLayout>\r\n\r\n            <androidx.recyclerview.widget.RecyclerView\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"100dp\"/>\r\n\r\n        </LinearLayout>\r\n\r\n        <LinearLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:orientation=\"vertical\"\r\n            android:layout_marginTop=\"30dp\"\r\n            android:padding=\"20dp\">\r\n\r\n            <RelativeLayout\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\">\r\n\r\n                <TextView\r\n                    android:layout_width=\"wrap_content\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:text=\"@string/app_name3\"\r\n                    android:layout_alignParentRight=\"true\"\r\n                    android:layout_centerVertical=\"true\"/>\r\n\r\n\r\n            </RelativeLayout>\r\n\r\n            <androidx.recyclerview.widget.RecyclerView\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"100dp\"/>\r\n\r\n        </LinearLayout>\r\n\r\n\r\n    </LinearLayout>\r\n\r\n</ScrollView>\r\n\r\n\r\n</LinearLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_home_page.xml b/app/src/main/res/layout/activity_home_page.xml
+--- a/app/src/main/res/layout/activity_home_page.xml	(revision fbf7af05a564db1e01fe5bba3ff8b0285d12f5aa)
++++ b/app/src/main/res/layout/activity_home_page.xml	(date 1633767403029)
+@@ -190,7 +190,7 @@
+             <androidx.recyclerview.widget.RecyclerView
+                 android:id="@+id/feature_recycled"
+                 android:layout_width="match_parent"
+-                android:layout_height="280dp"
++                android:layout_height="300dp"
+                 android:layout_toRightOf="@id/featured_background"
+                 android:background="@drawable/background1" />
+ 
+Index: gradle/wrapper/gradle-wrapper.properties
+===================================================================
+diff --git a/gradle/wrapper/gradle-wrapper.properties b/gradle/wrapper/gradle-wrapper.properties
+deleted file mode 100644
+--- a/gradle/wrapper/gradle-wrapper.properties	(revision fbf7af05a564db1e01fe5bba3ff8b0285d12f5aa)
++++ /dev/null	(revision fbf7af05a564db1e01fe5bba3ff8b0285d12f5aa)
+@@ -1,6 +0,0 @@
+-#Thu Oct 07 00:40:24 IST 2021
+-distributionBase=GRADLE_USER_HOME
+-distributionUrl=https\://services.gradle.org/distributions/gradle-7.0.2-bin.zip
+-distributionPath=wrapper/dists
+-zipStorePath=wrapper/dists
+-zipStoreBase=GRADLE_USER_HOME
+Index: gradle.properties
+===================================================================
+diff --git a/gradle.properties b/gradle.properties
+deleted file mode 100644
+--- a/gradle.properties	(revision fbf7af05a564db1e01fe5bba3ff8b0285d12f5aa)
++++ /dev/null	(revision fbf7af05a564db1e01fe5bba3ff8b0285d12f5aa)
+@@ -1,19 +0,0 @@
+-# Project-wide Gradle settings.
+-# IDE (e.g. Android Studio) users:
+-# Gradle settings configured through the IDE *will override*
+-# any settings specified in this file.
+-# For more details on how to configure your build environment visit
+-# http://www.gradle.org/docs/current/userguide/build_environment.html
+-# Specifies the JVM arguments used for the daemon process.
+-# The setting is particularly useful for tweaking memory settings.
+-org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8
+-# When configured, Gradle will run in incubating parallel mode.
+-# This option should only be used with decoupled projects. More details, visit
+-# http://www.gradle.org/docs/current/userguide/multi_project_builds.html#sec:decoupled_projects
+-# org.gradle.parallel=true
+-# AndroidX package structure to make it clearer which packages are bundled with the
+-# Android operating system, and which are packaged with your app"s APK
+-# https://developer.android.com/topic/libraries/support-library/androidx-rn
+-android.useAndroidX=true
+-# Automatically convert third-party libraries to use AndroidX
+-android.enableJetifier=true
+\ No newline at end of file
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Top-level build file where you can add configuration options common to all sub-projects/modules.\r\nbuildscript {\r\n    repositories {\r\n        google()\r\n        mavenCentral()\r\n    }\r\n    dependencies {\r\n        classpath \"com.android.tools.build:gradle:7.0.2\"\r\n\r\n        // NOTE: Do not place your application dependencies here; they belong\r\n        // in the individual module build.gradle files\r\n    }\r\n}\r\n\r\ntask clean(type: Delete) {\r\n    delete rootProject.buildDir\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build.gradle b/build.gradle
+--- a/build.gradle	(revision fbf7af05a564db1e01fe5bba3ff8b0285d12f5aa)
++++ b/build.gradle	(date 1633770940582)
+@@ -1,5 +1,8 @@
+ // Top-level build file where you can add configuration options common to all sub-projects/modules.
+ buildscript {
++    ext {
++        agp_version = '7.0.2'
++    }
+     repositories {
+         google()
+         mavenCentral()
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    package=\"com.example.gflock\">\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/Theme.AppCompat.DayNight.NoActionBar\">\r\n        <activity\r\n            android:name=\".HomePage\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".Whislist\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".MessageSeller\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".Login\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".ClothDetails\"\r\n            android:exported=\"true\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	(revision fbf7af05a564db1e01fe5bba3ff8b0285d12f5aa)
++++ b/app/src/main/AndroidManifest.xml	(date 1633664730928)
+@@ -10,10 +10,10 @@
+         android:supportsRtl="true"
+         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+         <activity
+-            android:name=".HomePage"
++            android:name=".Whislist"
+             android:exported="true" />
+         <activity
+-            android:name=".Whislist"
++            android:name=".ClothDetails"
+             android:exported="true" />
+         <activity
+             android:name=".MessageSeller"
+@@ -22,7 +22,7 @@
+             android:name=".Login"
+             android:exported="true" />
+         <activity
+-            android:name=".ClothDetails"
++            android:name=".HomePage"
+             android:exported="true">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+Index: app/src/main/res/layout/featured_card_design.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/featured_card_design.xml b/app/src/main/res/layout/featured_card_design.xml
+new file mode 100644
+--- /dev/null	(date 1633758059241)
++++ b/app/src/main/res/layout/featured_card_design.xml	(date 1633758059241)
+@@ -0,0 +1,46 @@
++ <?xml version="1.0" encoding="utf-8"?>
++<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
++android:layout_width="160dp"
++android:layout_height="300dp"
++xmlns:app="http://schemas.android.com/apk/res-auto"
++app:cardCornerRadius="2dp"
++app:cardElevation="8dp"
++android:layout_margin="10dp" >
++
++<LinearLayout
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:padding="15dp"
++    android:orientation="vertical">
++
++    <ImageView
++        android:id="@+id/featured_image1"
++        android:layout_width="match_parent"
++        android:layout_height="140dp"
++        android:src="@drawable/men3"
++        android:scaleType="centerCrop"/>
++
++    <TextView
++        android:id="@+id/featured_text1"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="Trouser"
++        android:textSize="20sp"
++        android:textColor="#000000"/>
++
++    <RatingBar
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:rating="3.5"
++        style="@style/Widget.AppCompat.RatingBar.Small"/>
++
++    <TextView
++        android:id="@+id/featured_price1"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:text="ndvdfj knvsndvnk nkvnksdkn"/>
++
++
++</LinearLayout>
++
++</androidx.cardview.widget.CardView>
+\ No newline at end of file
+Index: app/src/main/java/com/example/gflock/HelperClasses/SlideAdapter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/gflock/HelperClasses/SlideAdapter.java b/app/src/main/java/com/example/gflock/HelperClasses/SlideAdapter.java
+new file mode 100644
+--- /dev/null	(date 1633677492364)
++++ b/app/src/main/java/com/example/gflock/HelperClasses/SlideAdapter.java	(date 1633677492364)
+@@ -0,0 +1,4 @@
++package com.example.gflock.HelperClasses;
++
++public class SlideAdapter {
++}
+Index: .idea/deploymentTargetDropDown.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"deploymentTargetDropDown\">\r\n    <targetSelectedWithDropDown>\r\n      <Target>\r\n        <type value=\"QUICK_BOOT_TARGET\" />\r\n        <deviceKey>\r\n          <Key>\r\n            <type value=\"VIRTUAL_DEVICE_PATH\" />\r\n            <value value=\"C:\\Users\\user\\.android\\avd\\Pixel_4_API_30.avd\" />\r\n          </Key>\r\n        </deviceKey>\r\n      </Target>\r\n    </targetSelectedWithDropDown>\r\n    <timeTargetWasSelectedWithDropDown value=\"2021-10-07T18:51:00.277424800Z\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/deploymentTargetDropDown.xml b/.idea/deploymentTargetDropDown.xml
+--- a/.idea/deploymentTargetDropDown.xml	(revision fbf7af05a564db1e01fe5bba3ff8b0285d12f5aa)
++++ b/.idea/deploymentTargetDropDown.xml	(date 1633767551557)
+@@ -7,11 +7,11 @@
+         <deviceKey>
+           <Key>
+             <type value="VIRTUAL_DEVICE_PATH" />
+-            <value value="C:\Users\user\.android\avd\Pixel_4_API_30.avd" />
++            <value value="C:\Users\User\.android\avd\Pixel_3_XL_API_29.avd" />
+           </Key>
+         </deviceKey>
+       </Target>
+     </targetSelectedWithDropDown>
+-    <timeTargetWasSelectedWithDropDown value="2021-10-07T18:51:00.277424800Z" />
++    <timeTargetWasSelectedWithDropDown value="2021-10-09T08:19:05.992046700Z" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: app/src/main/java/com/example/gflock/HelperClasses/HomeAdapter/FeaturedHelperClass.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/gflock/HelperClasses/HomeAdapter/FeaturedHelperClass.java b/app/src/main/java/com/example/gflock/HelperClasses/HomeAdapter/FeaturedHelperClass.java
+new file mode 100644
+--- /dev/null	(date 1633678008114)
++++ b/app/src/main/java/com/example/gflock/HelperClasses/HomeAdapter/FeaturedHelperClass.java	(date 1633678008114)
+@@ -0,0 +1,25 @@
++package com.example.gflock.HelperClasses.HomeAdapter;
++
++public class FeaturedHelperClass {
++
++    int image;
++    String title,description;
++
++    public FeaturedHelperClass(int image,String title,String description) {
++        this.image = image;
++        this.title =title;
++        this.description= description;
++    }
++
++    public int getImage() {
++        return image;
++    }
++
++    public String getTitle() {
++        return title;
++    }
++
++    public String getDescription() {
++        return description;
++    }
++}
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"GRADLE\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleJvm\" value=\"Embedded JDK\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision fbf7af05a564db1e01fe5bba3ff8b0285d12f5aa)
++++ b/.idea/gradle.xml	(date 1633768951868)
+@@ -7,7 +7,7 @@
+         <option name="testRunner" value="GRADLE" />
+         <option name="distributionType" value="DEFAULT_WRAPPED" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+-        <option name="gradleJvm" value="Embedded JDK" />
++        <option name="gradleJvm" value="11" />
+         <option name="modules">
+           <set>
+             <option value="$PROJECT_DIR$" />
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"..\\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/card_1.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/gradient_background.xml\" value=\"0.1421875\" />\r\n        <entry key=\"..\\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_cloth_details.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_home_page.xml\" value=\"0.2\" />\r\n        <entry key=\"..\\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_message_seller.xml\" value=\"0.2\" />\r\n        <entry key=\"..\\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_whislist.xml\" value=\"0.2\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"1.8\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n  <component name=\"VisualizationToolProject\">\r\n    <option name=\"state\">\r\n      <ProjectState>\r\n        <option name=\"scale\" value=\"0.1\" />\r\n      </ProjectState>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision fbf7af05a564db1e01fe5bba3ff8b0285d12f5aa)
++++ b/.idea/misc.xml	(date 1633767481076)
+@@ -6,9 +6,10 @@
+         <entry key="..\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/card_1.xml" value="0.1" />
+         <entry key="..\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/gradient_background.xml" value="0.1421875" />
+         <entry key="..\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_cloth_details.xml" value="0.264" />
+-        <entry key="..\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_home_page.xml" value="0.2" />
++        <entry key="..\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_home_page.xml" value="0.16" />
+         <entry key="..\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_message_seller.xml" value="0.2" />
+         <entry key="..\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_whislist.xml" value="0.2" />
++        <entry key="..\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/featured_card_design.xml" value="0.1" />
+       </map>
+     </option>
+   </component>
+Index: app/src/main/java/com/example/gflock/HomePage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.gflock;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport android.os.Bundle;\r\n\r\npublic class HomePage extends AppCompatActivity {\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_home_page);\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/gflock/HomePage.java b/app/src/main/java/com/example/gflock/HomePage.java
+--- a/app/src/main/java/com/example/gflock/HomePage.java	(revision fbf7af05a564db1e01fe5bba3ff8b0285d12f5aa)
++++ b/app/src/main/java/com/example/gflock/HomePage.java	(date 1633680762401)
+@@ -1,14 +1,47 @@
+ package com.example.gflock;
+ 
+ import androidx.appcompat.app.AppCompatActivity;
++import androidx.recyclerview.widget.LinearLayoutManager;
++import androidx.recyclerview.widget.RecyclerView;
+ 
+ import android.os.Bundle;
++import android.view.WindowManager;
++
++import com.example.gflock.HelperClasses.HomeAdapter.FeaturedAdapter;
++import com.example.gflock.HelperClasses.HomeAdapter.FeaturedHelperClass;
++
++import java.util.ArrayList;
+ 
+ public class HomePage extends AppCompatActivity {
++    RecyclerView featurerecycled;
++    RecyclerView.Adapter adapter;
++
+ 
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
++        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+         setContentView(R.layout.activity_home_page);
++
++        //Hooks
++        featurerecycled = findViewById(R.id.feature_recycled);
++
++        featurerecycled();
++
++    }
++
++    private void featurerecycled() {
++
++        featurerecycled.setHasFixedSize(true);
++        featurerecycled.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
++
++        ArrayList<FeaturedHelperClass> featuredLocations = new ArrayList<>();
++        featuredLocations.add(new FeaturedHelperClass(R.drawable.men3,"Trouser","ghghsgd bjbbjaja bjjds"));
++        featuredLocations.add(new FeaturedHelperClass(R.drawable.image2,"Trouser","ghghsgd bjbbjaja bjjds"));
++        featuredLocations.add(new FeaturedHelperClass(R.drawable.image4,"Trouser","ghghsgd bjbbjaja bjjds"));
++
++    adapter = new FeaturedAdapter(featuredLocations);
++    featurerecycled.setAdapter(adapter);
++
+     }
+ }
+\ No newline at end of file
+Index: app/src/main/java/com/example/gflock/HelperClasses/HomeAdapter/FeaturedAdapter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/gflock/HelperClasses/HomeAdapter/FeaturedAdapter.java b/app/src/main/java/com/example/gflock/HelperClasses/HomeAdapter/FeaturedAdapter.java
+new file mode 100644
+--- /dev/null	(date 1633680121127)
++++ b/app/src/main/java/com/example/gflock/HelperClasses/HomeAdapter/FeaturedAdapter.java	(date 1633680121127)
+@@ -0,0 +1,66 @@
++package com.example.gflock.HelperClasses.HomeAdapter;
++
++import android.view.LayoutInflater;
++import android.view.View;
++import android.view.ViewGroup;
++import android.widget.ImageView;
++import android.widget.TextView;
++
++import androidx.annotation.NonNull;
++import androidx.recyclerview.widget.RecyclerView;
++
++import com.example.gflock.R;
++
++import java.util.ArrayList;
++
++public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.FeaturedViewHolder>  {
++
++
++    ArrayList<FeaturedHelperClass> featuredLocations;
++
++    public FeaturedAdapter(ArrayList<FeaturedHelperClass> featuredLocations) {
++        this.featuredLocations = featuredLocations;
++    }
++
++    @NonNull
++    @Override
++    public FeaturedViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
++        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.featured_card_design,parent,false);
++        FeaturedViewHolder featuredViewHolder = new FeaturedViewHolder(view);
++
++        return featuredViewHolder;
++    }
++
++    @Override
++    public void onBindViewHolder(@NonNull FeaturedViewHolder holder, int position) {
++
++        FeaturedHelperClass featuredHelperClass = featuredLocations.get(position);
++        holder.image.setImageResource(featuredHelperClass.getImage());
++        holder.title.setText(featuredHelperClass.getTitle());
++        holder.desc.setText(featuredHelperClass.getDescription());
++
++
++    }
++
++    @Override
++    public int getItemCount() {
++        return 0;
++    }
++
++    public static class FeaturedViewHolder extends RecyclerView.ViewHolder {
++
++        ImageView image;
++        TextView title,desc;
++
++        public FeaturedViewHolder(@NonNull View itemView) {
++            super(itemView);
++
++            //Hooks
++            image = itemView.findViewById(R.id.featured_image1);
++            title = itemView.findViewById(R.id.featured_text1);
++            desc = itemView.findViewById(R.id.featured_price1);
++        }
++    }
++
++
++}

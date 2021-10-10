@@ -1,0 +1,403 @@
+Index: app/src/main/java/com/example/gflock/HomePage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.gflock;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\nimport androidx.recyclerview.widget.LinearLayoutManager;\r\nimport androidx.recyclerview.widget.RecyclerView;\r\n\r\nimport android.graphics.drawable.GradientDrawable;\r\nimport android.os.Bundle;\r\nimport android.view.WindowManager;\r\n\r\nimport com.example.gflock.HelperClasses.HomeAdapter.CategoriesHelperClass;\r\nimport com.example.gflock.HelperClasses.HomeAdapter.CategoriesAdapter;\r\nimport com.example.gflock.HelperClasses.HomeAdapter.FeaturedAdapter;\r\n    import com.example.gflock.HelperClasses.HomeAdapter.FeaturedHelperClass;\r\nimport com.example.gflock.HelperClasses.HomeAdapter.MostViewedAdapter;\r\nimport com.example.gflock.HelperClasses.HomeAdapter.MostViewedHelperClass;\r\n\r\nimport java.util.ArrayList;\r\n\r\npublic class HomePage extends AppCompatActivity {\r\n    RecyclerView featurerecycled,mostViewedRecycler,categoriesRecycler;\r\n    RecyclerView.Adapter adapter;\r\n   // private GradientDrawable gradient1,gradient2,gradient3,gradient4;\r\n\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);\r\n        setContentView(R.layout.activity_home_page);\r\n\r\n        //Hooks\r\n        featurerecycled = findViewById(R.id.feature_recycled);\r\n        mostViewedRecycler= findViewById(R.id.bestseller_recycled);\r\n        categoriesRecycler = findViewById(R.id.categories_recycled);\r\n\r\n\r\n        featurerecycled();\r\n       mostViewedRecycler();\r\n       categoriesRecycler();\r\n\r\n\r\n    }\r\n\r\n\r\n    //Main\r\n    private void featurerecycled() {\r\n\r\n        featurerecycled.setHasFixedSize(true);\r\n        featurerecycled.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));\r\n\r\n        ArrayList<FeaturedHelperClass> featuredLocations = new ArrayList<>();\r\n\r\n        featuredLocations.add(new FeaturedHelperClass(R.drawable.men4,\"Washed Blue Jeans\",\"LKR3,850.00\"));\r\n        featuredLocations.add(new FeaturedHelperClass(R.drawable.image3,\"Off Shoulder Top\",\"LkR2450.00\"));\r\n        featuredLocations.add(new FeaturedHelperClass(R.drawable.image4,\"Ribbed Cropped Tank Top\",\"LKR1580.00\"));\r\n        featuredLocations.add(new FeaturedHelperClass(R.drawable.image4,\"Long Sleeved Peplum Top\",\"LKR1580.00\"));\r\n        featuredLocations.add(new FeaturedHelperClass(R.drawable.image4,\"Maxi Dress-789\",\"LKR4580.00\"));\r\n\r\n    adapter = new FeaturedAdapter(featuredLocations);\r\n    featurerecycled.setAdapter(adapter);\r\n\r\n        //GradientDrawable gradient1 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT,new int[]{0xffeff400,0xffaff600});\r\n\r\n    }\r\n\r\n\r\n    private void mostViewedRecycler() {\r\n\r\n       mostViewedRecycler.setHasFixedSize(true);\r\n       mostViewedRecycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));\r\n\r\n        ArrayList<MostViewedHelperClass> mostViewedLocations = new ArrayList<>();\r\n        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.image3,\"Off Shoulder Top\",\"LKR1,850.00\"));\r\n        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.image2,\"Maxi Dress-789\",\"LKR2,850.00\"));\r\n        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.image7,\"Maxi Dress-500\",\"LKR3,850.00\"));\r\n\r\n        adapter = new MostViewedAdapter(mostViewedLocations);\r\n        mostViewedRecycler.setAdapter(adapter);\r\n\r\n    }\r\n\r\n    private void categoriesRecycler() {\r\n\r\n        //All Gradients\r\n       // gradient2 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xffd4cbe5, 0xffd4cbe5});\r\n        //gradient1 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xff7adccf, 0xff7adccf});\r\n        //gradient3 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xfff7c59f, 0xFFf7c59f});\r\n        //gradient4 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, new int[]{0xffb8d7f5, 0xffb8d7f5});\r\n\r\n\r\n        ArrayList<CategoriesHelperClass> categoriesHelperClasses = new ArrayList<>();\r\n        categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.image6,\"Tops\"));\r\n        categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.men3,\"Jeans\"));\r\n        categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.men1,\"Menswear\"));\r\n        categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.image7,\"Frocks\"));\r\n        categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.image4,\"Blousers\"));\r\n\r\n\r\n        categoriesRecycler.setHasFixedSize(true);\r\n        adapter = new CategoriesAdapter(categoriesHelperClasses);\r\n        categoriesRecycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));\r\n        categoriesRecycler.setAdapter(adapter);\r\n\r\n    }\r\n\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/gflock/HomePage.java b/app/src/main/java/com/example/gflock/HomePage.java
+--- a/app/src/main/java/com/example/gflock/HomePage.java	(revision fb0157752f04bb82a29a0cdf06bc92ed795660da)
++++ b/app/src/main/java/com/example/gflock/HomePage.java	(date 1633803906938)
+@@ -53,9 +53,9 @@
+ 
+         featuredLocations.add(new FeaturedHelperClass(R.drawable.men4,"Washed Blue Jeans","LKR3,850.00"));
+         featuredLocations.add(new FeaturedHelperClass(R.drawable.image3,"Off Shoulder Top","LkR2450.00"));
+-        featuredLocations.add(new FeaturedHelperClass(R.drawable.image4,"Ribbed Cropped Tank Top","LKR1580.00"));
+-        featuredLocations.add(new FeaturedHelperClass(R.drawable.image4,"Long Sleeved Peplum Top","LKR1580.00"));
+-        featuredLocations.add(new FeaturedHelperClass(R.drawable.image4,"Maxi Dress-789","LKR4580.00"));
++        featuredLocations.add(new FeaturedHelperClass(R.drawable.iamge8,"Ribbed Cropped Tank Top","LKR1580.00"));
++        featuredLocations.add(new FeaturedHelperClass(R.drawable.image6,"Long Sleeved Peplum Top","LKR1580.00"));
++        featuredLocations.add(new FeaturedHelperClass(R.drawable.image7,"Maxi Dress-789","LKR4580.00"));
+ 
+     adapter = new FeaturedAdapter(featuredLocations);
+     featurerecycled.setAdapter(adapter);
+@@ -74,6 +74,8 @@
+         mostViewedLocations.add(new MostViewedHelperClass(R.drawable.image3,"Off Shoulder Top","LKR1,850.00"));
+         mostViewedLocations.add(new MostViewedHelperClass(R.drawable.image2,"Maxi Dress-789","LKR2,850.00"));
+         mostViewedLocations.add(new MostViewedHelperClass(R.drawable.image7,"Maxi Dress-500","LKR3,850.00"));
++        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.image7,"Maxi Dress-500","LKR3,850.00"));
++
+ 
+         adapter = new MostViewedAdapter(mostViewedLocations);
+         mostViewedRecycler.setAdapter(adapter);
+@@ -94,7 +96,7 @@
+         categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.men3,"Jeans"));
+         categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.men1,"Menswear"));
+         categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.image7,"Frocks"));
+-        categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.image4,"Blousers"));
++        categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.image4,"Blouse"));
+ 
+ 
+         categoriesRecycler.setHasFixedSize(true);
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    package=\"com.example.gflock\">\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/Theme.AppCompat.DayNight.NoActionBar\">\r\n        <activity\r\n            android:name=\".Cart\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".HomePage\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".review\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".payement1\"\r\n            android:exported=\"true\" /> <!-- <activity -->\r\n        <!-- android:name=\".Login\" -->\r\n        <!-- android:exported=\"true\" /> -->\r\n        <activity\r\n            android:name=\".Whislist\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".ClothDetails\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".MessageSeller\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".Login\"\r\n            android:exported=\"true\" />\r\n        <activity\r\n            android:name=\".MyAccount\"\r\n            android:exported=\"true\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	(revision fb0157752f04bb82a29a0cdf06bc92ed795660da)
++++ b/app/src/main/AndroidManifest.xml	(date 1633811636961)
+@@ -10,6 +10,9 @@
+         android:supportsRtl="true"
+         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+         <activity
++            android:name=".ForHim"
++            android:exported="true" />
++        <activity
+             android:name=".Cart"
+             android:exported="true" />
+         <activity
+Index: app/src/main/res/layout/activity_for_him.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_for_him.xml b/app/src/main/res/layout/activity_for_him.xml
+new file mode 100644
+--- /dev/null	(date 1633812256613)
++++ b/app/src/main/res/layout/activity_for_him.xml	(date 1633812256613)
+@@ -0,0 +1,253 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++xmlns:app="http://schemas.android.com/apk/res-auto"
++xmlns:tools="http://schemas.android.com/tools"
++android:layout_width="match_parent"
++android:layout_height="match_parent"
++android:background="@drawable/gradient_background"
++tools:context=".ForHim">
++
++
++<!--  <view
++    android:layout_width="match_parent"
++    android:layout_height="1dp"
++    android:background="@color/colorPrimaryDark"
++    tools:layout_editor_absoluteX="-37dp"
++    tools:layout_editor_absoluteY="84dp" />  -->
++
++
++    <TextView
++        android:id="@+id/textView"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_centerHorizontal="true"
++        android:layout_marginTop="20dp"
++        android:text="MENWEAR"
++        android:textColor="#FFFFFFFF"
++        android:textSize="26dp"
++        android:textStyle="bold" />
++
++<GridLayout
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:layout_below="@+id/textView"
++    android:rowCount="3"
++    android:columnCount="2"
++    android:layout_margin="20dp">
++
++    <androidx.cardview.widget.CardView
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_row="0"
++        android:layout_column="0"
++        android:layout_rowWeight="1"
++        android:layout_columnWeight="1"
++        android:layout_gravity="fill"
++        android:layout_margin="8dp"
++        app:cardCornerRadius="8dp"
++        app:cardElevation="8dp">
++
++        <LinearLayout
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_gravity="center_vertical|center_horizontal"
++            android:gravity="center"
++            android:orientation="vertical">
++
++            <ImageView
++                android:layout_height="150dp"
++                android:layout_width="150dp"
++                android:src="@drawable/image3" />
++
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="Off Shoulder Top"
++                android:textAlignment="center"
++                android:textColor="#000000"
++                android:textStyle="bold" />
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="LKR2,450.00"
++                android:textAlignment="center"
++                android:textStyle="bold" />
++
++        </LinearLayout>
++    </androidx.cardview.widget.CardView>
++
++    <androidx.cardview.widget.CardView
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_row="0"
++        android:layout_column="1"
++        android:layout_rowWeight="1"
++        android:layout_columnWeight="1"
++        android:layout_gravity="fill"
++        android:layout_margin="8dp"
++        app:cardCornerRadius="8dp"
++        app:cardElevation="8dp">
++
++        <LinearLayout
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_gravity="center_vertical|center_horizontal"
++            android:gravity="center"
++            android:orientation="vertical">
++
++            <ImageView
++                android:layout_height="150dp"
++                android:layout_width="150dp"
++                android:src="@drawable/image6" />
++
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="Long Sleeved Peplum Top"
++                android:textAlignment="center"
++                android:textColor="#000000"
++                android:textStyle="bold" />
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="LKR2,800.00"
++                android:textAlignment="center"
++                android:textStyle="bold" />
++
++
++        </LinearLayout>
++    </androidx.cardview.widget.CardView>
++
++    <androidx.cardview.widget.CardView
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_row="1"
++        android:layout_column="0"
++        android:layout_rowWeight="1"
++        android:layout_columnWeight="1"
++        android:layout_gravity="fill"
++        android:layout_margin="8dp"
++        app:cardCornerRadius="8dp"
++        app:cardElevation="8dp">
++
++        <LinearLayout
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_gravity="center_vertical|center_horizontal"
++            android:gravity="center"
++            android:orientation="vertical">
++
++            <ImageView
++                android:layout_height="150dp"
++                android:layout_width="150dp"
++                android:src="@drawable/iamge8" />
++
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="Ribbed Cropped Tank Top"
++                android:textColor="#000000"
++                android:textAlignment="center"
++                android:textStyle="bold" />
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="LKR1,500.00"
++                android:textAlignment="center"
++                android:textStyle="bold" />
++
++
++        </LinearLayout>
++    </androidx.cardview.widget.CardView>
++
++    <androidx.cardview.widget.CardView
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_row="1"
++        android:layout_column="1"
++        android:layout_rowWeight="1"
++        android:layout_columnWeight="1"
++        android:layout_gravity="fill"
++        android:layout_margin="8dp"
++        app:cardCornerRadius="8dp"
++        app:cardElevation="8dp">
++
++        <LinearLayout
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_gravity="center_vertical|center_horizontal"
++            android:gravity="center"
++            android:orientation="vertical">
++
++            <ImageView
++                android:layout_height="150dp"
++                android:layout_width="150dp"
++                android:src="@drawable/image7" />
++
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="Maxi Dress-768"
++                android:textAlignment="center"
++                android:textColor="#000000"
++                android:textStyle="bold" />
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="LKR3,950.00"
++                android:textAlignment="center"
++                android:textStyle="bold" />
++
++
++        </LinearLayout>
++    </androidx.cardview.widget.CardView>
++
++    <androidx.cardview.widget.CardView
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_row="2"
++        android:layout_column="0"
++        android:layout_rowWeight="1"
++        android:layout_columnWeight="1"
++        android:layout_gravity="fill"
++        android:layout_margin="8dp"
++        app:cardCornerRadius="8dp"
++        app:cardElevation="8dp">
++
++        <LinearLayout
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_gravity="center_vertical|center_horizontal"
++            android:gravity="center"
++            android:orientation="vertical">
++
++            <ImageView
++                android:layout_height="150dp"
++                android:layout_width="150dp"
++                android:src="@drawable/image1" />
++
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="Off Shoulder Top"
++                android:textAlignment="center"
++                android:textColor="#000000"
++                android:textStyle="bold" />
++            <TextView
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="LKR2,450.00"
++                android:textAlignment="center"
++                android:textStyle="bold" />
++
++
++        </LinearLayout>
++    </androidx.cardview.widget.CardView>
++
++
++
++
++</GridLayout>
++
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/gflock/ForHim.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/gflock/ForHim.java b/app/src/main/java/com/example/gflock/ForHim.java
+new file mode 100644
+--- /dev/null	(date 1633811637452)
++++ b/app/src/main/java/com/example/gflock/ForHim.java	(date 1633811637452)
+@@ -0,0 +1,14 @@
++package com.example.gflock;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.os.Bundle;
++
++public class ForHim extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_for_him);
++    }
++}
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/drawable/btn.xml\" value=\"0.14635416666666667\" />\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/drawable/outlinebtn.xml\" value=\"0.14635416666666667\" />\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/drawable/vie_bg.xml\" value=\"0.14635416666666667\" />\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_cloth_details.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_login.xml\" value=\"0.2\" />\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_my_account.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_signup.xml\" value=\"0.2\" />\r\n        <entry key=\"..\\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/borderbox.xml\" value=\"0.2441025641025641\" />\r\n        <entry key=\"..\\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/nav.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_login.xml\" value=\"0.11614583333333334\" />\r\n        <entry key=\"..\\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_payement1.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_review.xml\" value=\"0.22314814814814815\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"Android Studio default JDK\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision fb0157752f04bb82a29a0cdf06bc92ed795660da)
++++ b/.idea/misc.xml	(date 1633811791758)
+@@ -3,26 +3,27 @@
+   <component name="DesignSurface">
+     <option name="filePathToZoomLevelMap">
+       <map>
+-        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/drawable/btn.xml" value="0.14635416666666667" />
+-        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/drawable/outlinebtn.xml" value="0.14635416666666667" />
+-        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/drawable/vie_bg.xml" value="0.14635416666666667" />
+-        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_cloth_details.xml" value="0.264" />
+-        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_login.xml" value="0.2" />
+-        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_my_account.xml" value="0.264" />
+-        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_signup.xml" value="0.2" />
+-        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/borderbox.xml" value="0.2441025641025641" />
+-        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/nav.xml" value="0.1" />
+-        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_login.xml" value="0.11614583333333334" />
+-        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_payement1.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_review.xml" value="0.22314814814814815" />
++        <entry key="..\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/card_1.xml" value="0.1" />
++        <entry key="..\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/gradient_background.xml" value="0.1421875" />
++        <entry key="..\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_cloth_details.xml" value="0.264" />
++        <entry key="..\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_for_him.xml" value="0.16145833333333334" />
++        <entry key="..\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_home_page.xml" value="0.2" />
++        <entry key="..\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_message_seller.xml" value="0.2" />
++        <entry key="..\:/Users/User/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_whislist.xml" value="0.2" />
+       </map>
+     </option>
+   </component>
+-  <component name="ExternalStorageConfigurationManager" enabled="true" />
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+     <option name="id" value="Android" />
+   </component>
++  <component name="VisualizationToolProject">
++    <option name="state">
++      <ProjectState>
++        <option name="scale" value="0.1" />
++      </ProjectState>
++    </option>
++  </component>
+ </project>
+\ No newline at end of file
