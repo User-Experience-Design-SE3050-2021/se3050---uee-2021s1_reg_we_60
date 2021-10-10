@@ -65,7 +65,7 @@
             app:layout_constraintVertical_bias="0.594" />
 
         <TextView
-            android:id="@+id/loginEmail"
+            android:id="@+id/profileFname"
             android:layout_width="143dp"
             android:layout_height="35dp"
             android:text="Email Address"
@@ -110,7 +110,7 @@
             app:layout_constraintVertical_bias="0.824" />
 
         <ImageView
-            android:id="@+id/imageView13"
+            android:id="@+id/loginPasswordIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="@+id/inputSignupPassword"
@@ -122,14 +122,14 @@
             app:srcCompat="@drawable/lock" />
 
         <ImageView
-            android:id="@+id/imageView14"
+            android:id="@+id/loginEmailIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="@+id/firstNameInput"
             app:layout_constraintEnd_toEndOf="@+id/firstNameInput"
             app:layout_constraintHorizontal_bias="0.04"
             app:layout_constraintStart_toStartOf="@+id/firstNameInput"
-            app:layout_constraintTop_toBottomOf="@+id/loginEmail"
+            app:layout_constraintTop_toBottomOf="@+id/profileFname"
             app:layout_constraintVertical_bias="0.767"
             app:srcCompat="@drawable/email" />
 
