@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
+    android:background="@color/colorBlue"
     tools:context=".Whislist">
 
 
@@ -21,11 +21,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:text="WISHLIST"
-        android:textColor="#FFFFFFFF"
+        android:textColor="@color/black"
         android:textSize="26dp"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"/>
+        android:textStyle="bold" />
 
     <GridLayout
         android:layout_width="match_parent"
