@@ -14,7 +14,7 @@
         android:layout_marginTop="116dp"
         android:layout_marginEnd="123dp"
         android:layout_marginBottom="564dp"
-        android:text="HIGH NECK CROP TOP -349"
+        android:text="CREW NECK T SHIRT - MEN 1808"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -123,38 +123,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.102" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="95dp"
-        android:layout_height="134dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="287dp"
-        android:layout_marginBottom="469dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4"
-        app:srcCompat="@drawable/cloth" />
-
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="302dp"
-        android:layout_marginTop="135dp"
+        android:layout_marginTop="140dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginBottom="574dp"
-        android:text="LKR 1,850.00"
+        android:layout_marginBottom="569dp"
+        android:text="LKR 1,550.00"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView9"
@@ -162,9 +144,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="155dp"
         android:layout_marginTop="162dp"
-        android:layout_marginEnd="199dp"
+        android:layout_marginEnd="210dp"
         android:layout_marginBottom="550dp"
-        android:text="8/ yellow"
+        android:text="S/ navy"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -174,11 +156,11 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="155dp"
+        android:layout_marginStart="160dp"
         android:layout_marginTop="181dp"
-        android:layout_marginEnd="224dp"
+        android:layout_marginEnd="219dp"
         android:layout_marginBottom="531dp"
-        android:text="Qty 8"
+        android:text="Qty 1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -302,7 +284,7 @@
         android:id="@+id/textView13"
         android:layout_width="98dp"
         android:layout_height="67dp"
-        android:text="No 10/3 ,, 3rd lane, Madaptha, Piliyandala"
+        android:text="No 10/3 , 3rd lane, Madaptha, Piliyandala"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.092"
@@ -398,7 +380,7 @@
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LKR 1850.00"
+        android:text="LKR 1550.00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView19"
         app:layout_constraintHorizontal_bias="0.644"
@@ -422,7 +404,7 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LKR 2050.00"
+        android:text="LKR 1750.00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView19"
         app:layout_constraintHorizontal_bias="0.643"
@@ -481,6 +463,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.922" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="99dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginBottom="471dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tshirt1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
