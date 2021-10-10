@@ -25,7 +25,7 @@
             android:name=".payement1"
             android:exported="true" />
         <activity
-            android:name=".Whislist"
+            android:name=".Signup"
             android:exported="true" />
         <activity
             android:name=".payement2"
@@ -40,7 +40,7 @@
             android:name=".ClothDetails"
             android:exported="true" />
         <activity
-            android:name=".Signup"
+            android:name=".Whislist"
             android:exported="true" />
         <activity
             android:name=".Profile"

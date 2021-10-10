@@ -59,7 +59,7 @@
         android:id="@+id/constraintLayout2"
         android:layout_width="395dp"
         android:layout_height="706dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="38dp"
         android:background="@drawable/vie_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -170,7 +170,9 @@
             android:layout_marginEnd="36dp"
             android:background="@drawable/edit_tx"
             android:ems="10"
-            android:hint="    Dave"
+            android:hint="Dave"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -184,7 +186,9 @@
             android:layout_marginEnd="36dp"
             android:background="@drawable/edit_tx"
             android:ems="10"
-            android:hint="    Bulner"
+            android:hint="Bulner"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -198,7 +202,9 @@
             android:layout_marginEnd="36dp"
             android:background="@drawable/edit_tx"
             android:ems="10"
-            android:hint="    Male"
+            android:hint="Male"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -212,7 +218,9 @@
             android:layout_marginEnd="36dp"
             android:background="@drawable/edit_tx"
             android:ems="10"
-            android:hint="    bulner@gmail.com"
+            android:hint="bulner@gmail.com"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -226,13 +234,15 @@
             android:layout_marginEnd="36dp"
             android:background="@drawable/edit_tx"
             android:ems="10"
-            android:hint="    07144587454"
+            android:hint="07144587454"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/loginButton"
+            android:id="@+id/saveButton"
             android:layout_width="323dp"
             android:layout_height="44dp"
             android:background="@drawable/btn"
@@ -245,6 +255,23 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.957" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="75dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="@color/white"
+        android:text="EDIT"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/circularImageView"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

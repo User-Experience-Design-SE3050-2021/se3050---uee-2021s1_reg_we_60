@@ -40,8 +40,12 @@
             android:layout_height="45dp"
             android:background="@drawable/edit_tx"
             android:ems="10"
-            android:hint="          Enter Email"
+            android:hint="Enter Email"
             android:inputType="textPersonName"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="12dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.505"
@@ -55,8 +59,12 @@
             android:layout_height="47dp"
             android:background="@drawable/edit_tx"
             android:ems="10"
-            android:hint="          Enter Password"
+            android:hint="Enter Password"
             android:inputType="textPersonName"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="12dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
@@ -108,30 +116,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.824" />
-
-        <ImageView
-            android:id="@+id/loginPasswordIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@+id/inputSignupPassword"
-            app:layout_constraintEnd_toEndOf="@+id/inputSignupPassword"
-            app:layout_constraintHorizontal_bias="0.043"
-            app:layout_constraintStart_toStartOf="@+id/inputSignupPassword"
-            app:layout_constraintTop_toBottomOf="@+id/loginPassword"
-            app:layout_constraintVertical_bias="0.6"
-            app:srcCompat="@drawable/lock" />
-
-        <ImageView
-            android:id="@+id/loginEmailIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@+id/firstNameInput"
-            app:layout_constraintEnd_toEndOf="@+id/firstNameInput"
-            app:layout_constraintHorizontal_bias="0.04"
-            app:layout_constraintStart_toStartOf="@+id/firstNameInput"
-            app:layout_constraintTop_toBottomOf="@+id/profileFname"
-            app:layout_constraintVertical_bias="0.767"
-            app:srcCompat="@drawable/email" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
