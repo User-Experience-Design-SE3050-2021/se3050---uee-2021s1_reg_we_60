@@ -18,10 +18,9 @@
         android:layout_height="39dp"
         android:layout_marginStart="49dp"
         android:layout_marginTop="48dp"
-        android:layout_marginEnd="53dp"
         app:layout_constraintBottom_toBottomOf="@+id/circularImageView"
         app:layout_constraintEnd_toStartOf="@+id/profile"
-        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -32,11 +31,11 @@
         android:layout_width="204dp"
         android:layout_height="37dp"
         android:layout_marginTop="48dp"
-        android:text="MY ACCOUNT"
+        android:text="PROFILE"
         android:textColor="@color/white"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintHorizontal_bias="0.743"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,7 +67,7 @@
 
 
         <TextView
-            android:id="@+id/loginEmail"
+            android:id="@+id/profileFname"
             android:layout_width="143dp"
             android:layout_height="35dp"
             android:layout_marginStart="27dp"
@@ -83,7 +82,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/loginEmail2"
+            android:id="@+id/profileLname"
             android:layout_width="143dp"
             android:layout_height="35dp"
             android:layout_marginStart="27dp"
@@ -99,7 +98,7 @@
             app:layout_constraintTop_toBottomOf="@+id/firstNameInput" />
 
         <TextView
-            android:id="@+id/loginEmail3"
+            android:id="@+id/profileGender"
             android:layout_width="143dp"
             android:layout_height="35dp"
             android:layout_marginStart="27dp"
@@ -112,7 +111,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/firstNameInput2" />
+            app:layout_constraintTop_toBottomOf="@+id/lastNameinput" />
 
         <TextView
             android:id="@+id/loginEmail4"
@@ -128,10 +127,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/firstNameInput3" />
+            app:layout_constraintTop_toBottomOf="@+id/genderInput" />
 
         <TextView
-            android:id="@+id/loginEmail5"
+            android:id="@+id/profileEmail"
             android:layout_width="143dp"
             android:layout_height="35dp"
             android:layout_marginStart="27dp"
@@ -144,10 +143,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/firstNameInput3" />
+            app:layout_constraintTop_toBottomOf="@+id/genderInput" />
 
         <TextView
-            android:id="@+id/loginEmail6"
+            android:id="@+id/profilePhone"
             android:layout_width="143dp"
             android:layout_height="35dp"
             android:layout_marginStart="27dp"
@@ -160,7 +159,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/firstNameInput3" />
+            app:layout_constraintTop_toBottomOf="@+id/genderInput" />
 
         <EditText
             android:id="@+id/firstNameInput"
@@ -177,7 +176,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/firstNameInput2"
+            android:id="@+id/lastNameinput"
             android:layout_width="323dp"
             android:layout_height="45dp"
             android:layout_marginStart="36dp"
@@ -191,7 +190,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/firstNameInput3"
+            android:id="@+id/genderInput"
             android:layout_width="323dp"
             android:layout_height="45dp"
             android:layout_marginStart="36dp"
@@ -205,7 +204,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/firstNameInput4"
+            android:id="@+id/profileEmailinput"
             android:layout_width="323dp"
             android:layout_height="45dp"
             android:layout_marginStart="36dp"
@@ -219,7 +218,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/firstNameInput5"
+            android:id="@+id/profilePhoneInput"
             android:layout_width="323dp"
             android:layout_height="45dp"
             android:layout_marginStart="36dp"

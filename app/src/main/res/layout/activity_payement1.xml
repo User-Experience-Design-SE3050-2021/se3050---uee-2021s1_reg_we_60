@@ -74,7 +74,7 @@
         app:tint="#7A7979" />
 
     <TextView
-        android:id="@+id/loginEmail"
+        android:id="@+id/profileFname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="DELIVERY"
