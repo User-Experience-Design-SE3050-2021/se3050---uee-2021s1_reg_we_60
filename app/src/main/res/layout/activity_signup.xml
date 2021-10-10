@@ -82,7 +82,7 @@
             android:paddingEnd="12dp"
             android:background="@drawable/edit_tx"
             android:hint="Enter Password"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             android:drawablePadding="12dp"
             android:drawableStart="@drawable/lock"
             app:layout_constraintBottom_toBottomOf="parent"
