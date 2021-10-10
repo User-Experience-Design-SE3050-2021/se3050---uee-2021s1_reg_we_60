@@ -25,7 +25,8 @@ public class HomePage extends AppCompatActivity {
     RecyclerView featurerecycled,mostViewedRecycler,categoriesRecycler;
     RecyclerView.Adapter adapter;
    // private GradientDrawable gradient1,gradient2,gradient3,gradient4;
-    public ImageView imageView;
+    public ImageView imageView, cart, message, myaccount;
+
 
 
     @Override
@@ -39,6 +40,10 @@ public class HomePage extends AppCompatActivity {
         mostViewedRecycler= findViewById(R.id.bestseller_recycled);
         categoriesRecycler = findViewById(R.id.categories_recycled);
         imageView = findViewById(R.id.forhim1);
+        cart = findViewById(R.id.cart2);
+        message = findViewById(R.id.mesg);
+        myaccount = findViewById(R.id.men);
+
 
 
         featurerecycled();
@@ -61,6 +66,42 @@ public class HomePage extends AppCompatActivity {
 
             }
         });
+
+        cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(HomePage.this, Cart.class);
+                startActivity(intent1);
+
+                Toast toast = Toast.makeText(HomePage.this,"Cart...", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+
+        message.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(HomePage.this, MessageSeller.class);
+                startActivity(intent2);
+
+                Toast toast = Toast.makeText(HomePage.this,"Message Seller...", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+
+        myaccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent3 = new Intent(HomePage.this, MyAccount.class);
+                startActivity(intent3);
+
+
+                Toast toast = Toast.makeText(HomePage.this,"My Account...", Toast.LENGTH_SHORT);
+                toast.show();
+
+            }
+        });
+
 
     }
 

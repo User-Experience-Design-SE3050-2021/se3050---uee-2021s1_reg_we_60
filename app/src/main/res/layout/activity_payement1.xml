@@ -448,7 +448,7 @@
         android:layout_marginTop="178dp"
         android:layout_marginEnd="29dp"
         android:layout_marginBottom="534dp"
-        android:text="LKR 2,050.00"
+        android:text="LKR 1,750.00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
