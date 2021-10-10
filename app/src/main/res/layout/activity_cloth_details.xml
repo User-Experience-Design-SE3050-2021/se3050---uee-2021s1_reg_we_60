@@ -134,7 +134,7 @@
             app:layout_constraintVertical_bias="0.14" />
 
         <TextView
-            android:id="@+id/loginTitle"
+            android:id="@+id/profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SELECT COLOR"
@@ -179,7 +179,7 @@
             app:layout_constraintVertical_bias="0.076" />
 
         <TextView
-            android:id="@+id/loginEmail"
+            android:id="@+id/profileFname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="LKR 1550.00"
@@ -293,7 +293,7 @@
             app:layout_constraintVertical_bias="0.457" />
 
         <Button
-            android:id="@+id/signupButton"
+            android:id="@+id/loginButton"
             android:layout_width="80dp"
             android:layout_height="42dp"
             android:text="L"

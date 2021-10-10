@@ -35,11 +35,12 @@
         app:layout_constraintVertical_bias="1.0">
 
         <EditText
-            android:id="@+id/inputSignupEmail"
+            android:id="@+id/firstNameInput"
             android:layout_width="323dp"
             android:layout_height="45dp"
             android:background="@drawable/edit_tx"
             android:ems="10"
+            android:hint="          Enter Email"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -54,6 +55,7 @@
             android:layout_height="45dp"
             android:background="@drawable/edit_tx"
             android:ems="10"
+            android:hint="          Enter Name"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -68,6 +70,7 @@
             android:layout_height="47dp"
             android:background="@drawable/edit_tx"
             android:ems="10"
+            android:hint="          Enter Password"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -122,7 +125,7 @@
             app:layout_constraintVertical_bias="0.097" />
 
         <Button
-            android:id="@+id/signupButton"
+            android:id="@+id/loginButton"
             android:layout_width="323dp"
             android:layout_height="44dp"
             android:background="@drawable/btn"
@@ -135,6 +138,42 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.911" />
+
+        <ImageView
+            android:id="@+id/userNamePerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/inputUserName"
+            app:layout_constraintEnd_toEndOf="@+id/inputUserName"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="@+id/inputUserName"
+            app:layout_constraintTop_toBottomOf="@+id/signupName"
+            app:layout_constraintVertical_bias="0.689"
+            app:srcCompat="@drawable/person" />
+
+        <ImageView
+            android:id="@+id/signupEmailIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/firstNameInput"
+            app:layout_constraintEnd_toEndOf="@+id/firstNameInput"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="@+id/firstNameInput"
+            app:layout_constraintTop_toBottomOf="@+id/signupEmail"
+            app:layout_constraintVertical_bias="0.677"
+            app:srcCompat="@drawable/email" />
+
+        <ImageView
+            android:id="@+id/signupPasswordIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/inputSignupPassword"
+            app:layout_constraintEnd_toEndOf="@+id/inputSignupPassword"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="@+id/inputSignupPassword"
+            app:layout_constraintTop_toBottomOf="@+id/signupPassword"
+            app:layout_constraintVertical_bias="0.391"
+            app:srcCompat="@drawable/lock" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
