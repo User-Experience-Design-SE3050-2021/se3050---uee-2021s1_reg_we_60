@@ -4,7 +4,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:background="@drawable/gradient_background"
+android:background="@color/colorBlue"
 tools:context=".ForHim">
 
 
@@ -23,7 +23,7 @@ tools:context=".ForHim">
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="MENWEAR"
-        android:textColor="#FFFFFFFF"
+        android:textColor="@color/black"
         android:textSize="26dp"
         android:textStyle="bold" />
 
