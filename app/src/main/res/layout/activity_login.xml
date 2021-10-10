@@ -35,11 +35,12 @@
         app:layout_constraintVertical_bias="1.0">
 
         <EditText
-            android:id="@+id/inputSignupEmail"
+            android:id="@+id/firstNameInput"
             android:layout_width="323dp"
             android:layout_height="45dp"
             android:background="@drawable/edit_tx"
             android:ems="10"
+            android:hint="          Enter Email"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -54,6 +55,7 @@
             android:layout_height="47dp"
             android:background="@drawable/edit_tx"
             android:ems="10"
+            android:hint="          Enter Password"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -93,7 +95,7 @@
             app:layout_constraintVertical_bias="0.478" />
 
         <Button
-            android:id="@+id/signupButton"
+            android:id="@+id/loginButton"
             android:layout_width="323dp"
             android:layout_height="44dp"
             android:background="@drawable/btn"
@@ -107,11 +109,35 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.824" />
 
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/inputSignupPassword"
+            app:layout_constraintEnd_toEndOf="@+id/inputSignupPassword"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="@+id/inputSignupPassword"
+            app:layout_constraintTop_toBottomOf="@+id/loginPassword"
+            app:layout_constraintVertical_bias="0.6"
+            app:srcCompat="@drawable/lock" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/firstNameInput"
+            app:layout_constraintEnd_toEndOf="@+id/firstNameInput"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="@+id/firstNameInput"
+            app:layout_constraintTop_toBottomOf="@+id/loginEmail"
+            app:layout_constraintVertical_bias="0.767"
+            app:srcCompat="@drawable/email" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/loginTitle"
+        android:id="@+id/profile"
         android:layout_width="143dp"
         android:layout_height="35dp"
         android:text="LOGIN"
