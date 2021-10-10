@@ -233,7 +233,7 @@
         app:tint="#7A7979" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/next"
         android:layout_width="371dp"
         android:layout_height="54dp"
         android:background="@drawable/btn"
