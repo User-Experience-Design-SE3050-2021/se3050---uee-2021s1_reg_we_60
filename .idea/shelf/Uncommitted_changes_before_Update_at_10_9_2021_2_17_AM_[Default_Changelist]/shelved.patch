@@ -1,0 +1,18 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_cloth_details.xml\" value=\"0.2\" />\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_home_page.xml\" value=\"0.13020833333333334\" />\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_login.xml\" value=\"0.24259259259259258\" />\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_signup.xml\" value=\"0.16\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"Android Studio default JDK\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision b391a89163ffaf156d0961a897ead432491c00dd)
++++ b/.idea/misc.xml	(date 1633725464485)
+@@ -6,6 +6,7 @@
+         <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_cloth_details.xml" value="0.2" />
+         <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_home_page.xml" value="0.13020833333333334" />
+         <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_login.xml" value="0.24259259259259258" />
++        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_my_account.xml" value="0.24259259259259258" />
+         <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_signup.xml" value="0.16" />
+       </map>
+     </option>

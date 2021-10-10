@@ -1,0 +1,137 @@
+Index: app/src/main/res/layout/activity_my_account.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".MyAccount\">\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_my_account.xml b/app/src/main/res/layout/activity_my_account.xml
+--- a/app/src/main/res/layout/activity_my_account.xml	(revision 01c3bc6211fe1a084b5f2ca945fcc3a148408a73)
++++ b/app/src/main/res/layout/activity_my_account.xml	(date 1633773441739)
+@@ -4,6 +4,86 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
++    android:background="#1C1B1B"
+     tools:context=".MyAccount">
+ 
++
++
++
++    <androidx.constraintlayout.widget.ConstraintLayout
++        android:id="@+id/constraintLayout"
++        android:layout_width="422dp"
++        android:layout_height="483dp"
++        android:background="@drawable/vie_bg"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.545"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="1.0">
++
++        <Button
++            android:id="@+id/button5"
++            android:layout_width="323dp"
++            android:layout_height="44dp"
++            android:background="@drawable/btn"
++            android:backgroundTint="#1C1B1B"
++            android:text="SIGN OUT"
++            android:textColor="@color/white"
++            app:layout_constraintBottom_toBottomOf="parent"
++            app:layout_constraintEnd_toEndOf="parent"
++            app:layout_constraintHorizontal_bias="0.505"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toTopOf="parent"
++            app:layout_constraintVertical_bias="0.915" />
++
++        <Button
++            android:id="@+id/profileBtn"
++            android:layout_width="221dp"
++            android:layout_height="48dp"
++            android:background="@drawable/btn"
++            android:text="Profile"
++            app:layout_constraintBottom_toTopOf="@+id/button12"
++            app:layout_constraintEnd_toEndOf="parent"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toTopOf="parent" />
++
++        <Button
++            android:id="@+id/button12"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginBottom="76dp"
++            android:text="Button"
++            app:layout_constraintBottom_toTopOf="@+id/button5"
++            app:layout_constraintEnd_toEndOf="parent"
++            app:layout_constraintStart_toStartOf="parent" />
++
++
++    </androidx.constraintlayout.widget.ConstraintLayout>
++
++    <TextView
++        android:id="@+id/textView6"
++        android:layout_width="204dp"
++        android:layout_height="37dp"
++        android:layout_marginStart="132dp"
++        android:text="MY ACCOUNT"
++        android:textColor="@color/white"
++        android:textSize="25sp"
++        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.075" />
++
++    <ImageView
++        android:id="@+id/loginBack"
++        android:layout_width="37dp"
++        android:layout_height="39dp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.072"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.023"
++        app:srcCompat="@drawable/next" />
++
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_cloth_details.xml\" value=\"0.2\" />\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_home_page.xml\" value=\"0.13020833333333334\" />\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_login.xml\" value=\"0.24259259259259258\" />\r\n        <entry key=\"..\\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_signup.xml\" value=\"0.16\" />\r\n        <entry key=\"..\\:/Users/user/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/bullet.xml\" value=\"0.2890625\" />\r\n        <entry key=\"..\\:/Users/user/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_cart.xml\" value=\"0.27291666666666664\" />\r\n        <entry key=\"..\\:/Users/user/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_cloth_details.xml\" value=\"0.4\" />\r\n        <entry key=\"..\\:/Users/user/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_home_page.xml\" value=\"0.16077898550724637\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"11\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 01c3bc6211fe1a084b5f2ca945fcc3a148408a73)
++++ b/.idea/misc.xml	(date 1633773355348)
+@@ -3,19 +3,19 @@
+   <component name="DesignSurface">
+     <option name="filePathToZoomLevelMap">
+       <map>
+-        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_cloth_details.xml" value="0.2" />
+-        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_home_page.xml" value="0.13020833333333334" />
+-        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_login.xml" value="0.24259259259259258" />
+-        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_signup.xml" value="0.16" />
+-        <entry key="..\:/Users/user/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/bullet.xml" value="0.2890625" />
+-        <entry key="..\:/Users/user/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_cart.xml" value="0.27291666666666664" />
+-        <entry key="..\:/Users/user/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_cloth_details.xml" value="0.4" />
+-        <entry key="..\:/Users/user/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_home_page.xml" value="0.16077898550724637" />
++        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/drawable/btn.xml" value="0.14635416666666667" />
++        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_login.xml" value="0.1" />
++        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_my_account.xml" value="0.264" />
++        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/borderbox.xml" value="0.2441025641025641" />
++        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/nav.xml" value="0.1" />
++        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_login.xml" value="0.11614583333333334" />
++        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_payement1.xml" value="0.25416666666666665" />
++        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_review.xml" value="0.22314814814814815" />
+       </map>
+     </option>
+   </component>
+   <component name="ExternalStorageConfigurationManager" enabled="true" />
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">

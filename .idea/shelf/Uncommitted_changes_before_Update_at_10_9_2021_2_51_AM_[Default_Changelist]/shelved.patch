@@ -1,0 +1,91 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"..\\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/borderbox.xml\" value=\"0.2441025641025641\" />\r\n        <entry key=\"..\\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/nav.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_login.xml\" value=\"0.11614583333333334\" />\r\n        <entry key=\"..\\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_payement1.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_review.xml\" value=\"0.22314814814814815\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"Android Studio default JDK\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision b5e9cc25cba53a5cbbed8cf425925794beb68535)
++++ b/.idea/misc.xml	(date 1633728093795)
+@@ -3,11 +3,11 @@
+   <component name="DesignSurface">
+     <option name="filePathToZoomLevelMap">
+       <map>
+-        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/borderbox.xml" value="0.2441025641025641" />
+-        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/drawable/nav.xml" value="0.1" />
+-        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_login.xml" value="0.11614583333333334" />
+-        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_payement1.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/Shereen/AndroidStudioProjects/se3050---uee-2021s1_reg_we_60/app/src/main/res/layout/activity_review.xml" value="0.22314814814814815" />
++        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_cloth_details.xml" value="0.2" />
++        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_home_page.xml" value="0.13020833333333334" />
++        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_login.xml" value="0.24259259259259258" />
++        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_my_account.xml" value="0.22870370370370371" />
++        <entry key="..\:/Users/Agasthi/AndroidStudioProjects/GFLOCK/app/src/main/res/layout/activity_signup.xml" value="0.16" />
+       </map>
+     </option>
+   </component>
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1633728033810)
++++ b/.idea/vcs.xml	(date 1633728033810)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+new file mode 100644
+--- /dev/null	(date 1633728033799)
++++ b/.idea/gradle.xml	(date 1633728033799)
+@@ -0,0 +1,19 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="GradleSettings">
++    <option name="linkedExternalProjectsSettings">
++      <GradleProjectSettings>
++        <option name="testRunner" value="GRADLE" />
++        <option name="distributionType" value="DEFAULT_WRAPPED" />
++        <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$" />
++            <option value="$PROJECT_DIR$/app" />
++          </set>
++        </option>
++        <option name="resolveModulePerSourceSet" value="false" />
++      </GradleProjectSettings>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+new file mode 100644
+--- /dev/null	(date 1633728033766)
++++ b/.idea/compiler.xml	(date 1633728033766)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <bytecodeTargetLevel target="11" />
++  </component>
++</project>
+\ No newline at end of file
