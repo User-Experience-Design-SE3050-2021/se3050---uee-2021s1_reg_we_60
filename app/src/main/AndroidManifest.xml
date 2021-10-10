@@ -19,13 +19,13 @@
             android:name=".ForHim"
             android:exported="true" />
         <activity
-            android:name=".review"
+            android:name=".Signup"
             android:exported="true" />
         <activity
             android:name=".payement1"
             android:exported="true" />
         <activity
-            android:name=".Signup"
+            android:name=".review"
             android:exported="true" />
         <activity
             android:name=".payement2"
