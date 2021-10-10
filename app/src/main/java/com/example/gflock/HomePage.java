@@ -53,9 +53,9 @@ public class HomePage extends AppCompatActivity {
 
         featuredLocations.add(new FeaturedHelperClass(R.drawable.men4,"Washed Blue Jeans","LKR3,850.00"));
         featuredLocations.add(new FeaturedHelperClass(R.drawable.image3,"Off Shoulder Top","LkR2450.00"));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.image4,"Ribbed Cropped Tank Top","LKR1580.00"));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.image4,"Long Sleeved Peplum Top","LKR1580.00"));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.image4,"Maxi Dress-789","LKR4580.00"));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.iamge8,"Ribbed Cropped Tank Top","LKR1580.00"));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.image6,"Long Sleeved Peplum Top","LKR1580.00"));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.image7,"Maxi Dress-789","LKR4580.00"));
 
     adapter = new FeaturedAdapter(featuredLocations);
     featurerecycled.setAdapter(adapter);
@@ -74,6 +74,8 @@ public class HomePage extends AppCompatActivity {
         mostViewedLocations.add(new MostViewedHelperClass(R.drawable.image3,"Off Shoulder Top","LKR1,850.00"));
         mostViewedLocations.add(new MostViewedHelperClass(R.drawable.image2,"Maxi Dress-789","LKR2,850.00"));
         mostViewedLocations.add(new MostViewedHelperClass(R.drawable.image7,"Maxi Dress-500","LKR3,850.00"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.image7,"Maxi Dress-500","LKR3,850.00"));
+
 
         adapter = new MostViewedAdapter(mostViewedLocations);
         mostViewedRecycler.setAdapter(adapter);
@@ -94,7 +96,7 @@ public class HomePage extends AppCompatActivity {
         categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.men3,"Jeans"));
         categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.men1,"Menswear"));
         categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.image7,"Frocks"));
-        categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.image4,"Blousers"));
+        categoriesHelperClasses.add(new CategoriesHelperClass(R.drawable.image4,"Blouse"));
 
 
         categoriesRecycler.setHasFixedSize(true);
