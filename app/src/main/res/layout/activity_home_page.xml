@@ -125,6 +125,7 @@ tools:context=".HomePage">
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/forhim1"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/men1"

@@ -6,7 +6,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
+import android.content.Intent;
+import android.widget.Toast;
 
 import com.example.gflock.HelperClasses.HomeAdapter.CategoriesHelperClass;
 import com.example.gflock.HelperClasses.HomeAdapter.CategoriesAdapter;
@@ -21,6 +25,7 @@ public class HomePage extends AppCompatActivity {
     RecyclerView featurerecycled,mostViewedRecycler,categoriesRecycler;
     RecyclerView.Adapter adapter;
    // private GradientDrawable gradient1,gradient2,gradient3,gradient4;
+    public ImageView imageView;
 
 
     @Override
@@ -33,12 +38,29 @@ public class HomePage extends AppCompatActivity {
         featurerecycled = findViewById(R.id.feature_recycled);
         mostViewedRecycler= findViewById(R.id.bestseller_recycled);
         categoriesRecycler = findViewById(R.id.categories_recycled);
+        imageView = findViewById(R.id.forhim1);
 
 
         featurerecycled();
        mostViewedRecycler();
        categoriesRecycler();
 
+
+
+
+
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomePage.this, ForHim.class);
+                startActivity(intent);
+
+                Toast toast = Toast.makeText(HomePage.this,"Selected For Him...", Toast.LENGTH_SHORT);
+                toast.show();
+
+            }
+        });
 
     }
 
@@ -105,6 +127,7 @@ public class HomePage extends AppCompatActivity {
         categoriesRecycler.setAdapter(adapter);
 
     }
+
 
 
 }
